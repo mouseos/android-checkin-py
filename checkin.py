@@ -4,11 +4,12 @@ from config_pb2 import DeviceConfigurationProto
 import sys
 import requests
 import gzip
+import json
 from io import BytesIO
 from pprint import pprint
 from urllib3.exceptions import InsecureRequestWarning
 
-if not len(sys.argv) == 2:
+if not len(sys.argv) == 3:
     print()
     print("Use: python3 " + sys.argv[0] + " [ro.build.fingerprint] [ro.product.model]")
     print()
@@ -148,14 +149,14 @@ def get_update_url(fingerprint,device):
         requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
         response = requests.post(checkin_url, data=compressed_data, headers=headers,verify=False)
         if response.status_code == 200:
-            print("Check-in 成功!")
+            #print("Succeed Check-in")
             # パースする
             response_proto = AndroidCheckinResponse()
             response_proto.ParseFromString(response.content)
             for data in response_proto.setting:
                 if((data.name.decode('utf-8'))=="update_url"):
                     '''
-                    print("OTAアップデートファイル")
+                    print("OTA Update file")
                     print("============================================================================================")
                     print("Build:"+android_build_proto.id)
                     print("URL:"+data.value.decode('utf-8'))
@@ -166,13 +167,13 @@ def get_update_url(fingerprint,device):
             '''with open('response.proto', 'w') as file:
                 file.write(str(response_proto))'''
         else:
-            print(f"Check-in 失敗　status code {response.status_code}")
+            print(f"Check-in Failure:\nStatusCode: {response.status_code}")
     except requests.RequestException as e:
-        print(f"check-in中にエラーが発生: {str(e)}")
+        print(f"FAILURE CHECK-IN:\n{str(e)}")
 
 
 #アップデートURLを取得
 #pprint(get_update_url("Fairphone/FP3/FP3:9/8901.2.A.0105.20191217/12171325:user/release-keys","FP3"))
 #pprint(get_update_url("benesse/TAB-A05-BD/TAB-A05-BD:9/01.00.000/01.00.000:user/release-keys","TAB-A05-BD"))
 
-pprint(get_update_url(sys.argv[1],sys.argv[2]))
+print(json.dumps(get_update_url(sys.argv[1],sys.argv[2]), indent=2, sort_keys=True))
