@@ -15,19 +15,12 @@ android_intent_proto = AndroidIntentProto()
 device_configution_proto = DeviceConfigurationProto()
 
 # 値をセット
-android_build_proto.id = "google/yakju/maguro:4.1.1/JRO03C/398337:user/release-keys"
-android_build_proto.product = "tuna"
-android_build_proto.carrier = "Google"
-android_build_proto.radio = "I9250XXLA2"
-android_build_proto.bootloader = "PRIMELA03"
-android_build_proto.client = "android-google"
-android_build_proto.timestamp = int(time.time())
-android_build_proto.device = "maguro"
-android_build_proto.model = "Galaxy Nexus"
-android_build_proto.manufacturer = "Samsung"
+android_checkin_request.id=0
+android_checkin_request.digest= "1-da39a3ee5e6b4b0d3255bfef95601890afd80709" 
+android_build_proto.id="Fairphone/FP3/FP3:9/8901.2.A.0105.20191217/12171325:user/release-keys"
 
 #　バイナリデータに変換
-result_bytes = android_build_proto.SerializeToString()
+result_bytes = android_checkin_request.SerializeToString()
 # Gzip圧縮
 compressed_data = gzip.compress(result_bytes)
 
