@@ -1,8 +1,8 @@
 statsOk: true
-timeMsec: 1707739669662
+timeMsec: 1707740591390
 setting {
   name: "android_id"
-  value: "3953170296797612226"
+  value: "3521326511310062319"
 }
 setting {
   name: "appstate.internal_server_api_path"
@@ -71,10 +71,6 @@ setting {
 setting {
   name: "babel_hangout_encoder_quality_scaling_mode"
   value: "1"
-}
-setting {
-  name: "babel_healthcheck_timer_enabled"
-  value: "true"
 }
 setting {
   name: "babel_incremental_load_wakelock_fix_r22"
@@ -407,10 +403,6 @@ setting {
 setting {
   name: "deskclock:cough_and_snore_supported_devices"
   value: "oriole,raven,cheetah,panther"
-}
-setting {
-  name: "deskclock:enable_timer_metric"
-  value: "true"
 }
 setting {
   name: "deskclock:premium_haptics_experience_supported_devices"
@@ -1153,6 +1145,26 @@ setting {
   value: "5"
 }
 setting {
+  name: "googlevoice_rateme_active_days"
+  value: "5"
+}
+setting {
+  name: "googlevoice_rateme_active_days_interval"
+  value: "7"
+}
+setting {
+  name: "googlevoice_rateme_enabled"
+  value: "true"
+}
+setting {
+  name: "googlevoice_rateme_timeout_after_update_days"
+  value: "7"
+}
+setting {
+  name: "googlevoice_rateme_trigger_on_conversation_to_conversationlist"
+  value: "true"
+}
+setting {
   name: "gtalk_clock_skew_threshold_ms"
   value: "300000"
 }
@@ -1262,10 +1274,6 @@ setting {
 }
 setting {
   name: "newsstand:background_auth_success_notification"
-  value: "true"
-}
-setting {
-  name: "newsstand:error_logging_severe_all"
   value: "true"
 }
 setting {
@@ -1666,7 +1674,7 @@ setting {
 }
 setting {
   name: "update_token"
-  value: "AJeBEByuSxX5zwKnrCAf54LeL6ULmzTPuBLXbwtqkJyWahQRjX-kywtjm-AKgCXbXputBthm-4ItR64N1dHEACMSfTDkTuSa0g"
+  value: "AJeBEBzoRfMZwaEM4jM1PLLcP37r58cu8TBlzPd8cHBza-hgTYzLn9uFozAzvVQVcAH6f3uRCwnytPHUZcYyYang_ysBo6PCeQ"
 }
 setting {
   name: "update_ui_notify_approval_strategy"
@@ -2237,10 +2245,6 @@ setting {
   value: "true"
 }
 setting {
-  name: "wear-dialer:primes_enable_timer_metric"
-  value: "true"
-}
-setting {
   name: "wear-dialer:quick_reply"
   value: "true"
 }
@@ -2476,6 +2480,6 @@ setting {
   name: "youtube_use_proxy"
   value: "true"
 }
-androidId: 3953170296797612226
-securityToken: 6663941256558574715
+androidId: 3521326511310062319
+securityToken: 7092989426911155632
 settingsDiff: false
