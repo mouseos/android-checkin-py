@@ -20,6 +20,11 @@ jobs:
       - name: Check out
         uses: actions/checkout@v4
 
+      - name: Show args
+        run: |
+          echo "fingerprint: ${{ inputs.fingerprint }}"
+          echo "model: ${{ inputs.model }}"
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
