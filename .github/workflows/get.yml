@@ -26,12 +26,17 @@ jobs:
           echo "model: ${{ inputs.model }}"
 
       - name: Setup Python
+        id: python
         uses: actions/setup-python@v5
         with:
           check-latest: true
           python-version: '3.x'
           cache: 'pip'
           cache-dependency-path: ./
+
+      - name: Install Python libraries
+        if: steps.python.outputs.cache-hit == false
+        run: pip install -r ./requirements.txt
 
       - name: Get URL
         run: python ./checkin.py ${{ inputs.fingerprint }} ${{ inputs.model }}
