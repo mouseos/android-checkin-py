@@ -53,7 +53,30 @@ android_build_proto.manufacturer="Fairphone"
 android_build_proto.buildProduct="FP3"
 android_build_proto.otaInstalled=False
 
+'''
+message AndroidCheckinProto {
+  optional AndroidBuildProto build = 1;
+  optional int64 lastCheckinMsec = 2;
+  repeated AndroidEventProto event = 3;
+  repeated AndroidStatisticProto stat = 4;
+  repeated string requestedGroup = 5;
+  optional string cellOperator = 6;
+  optional string simOperator = 7;
+  optional string roaming = 8;
+  optional int32 userNumber = 9;
+}
+'''
 android_checkin_proto.build.MergeFrom(android_build_proto)
+android_checkin_proto.lastCheckinMsec=0
+#android_checkin_proto.event.extend([])
+#android_checkin_proto.stat.extend([])
+#android_checkin_proto.requestedGroup.extend([])
+#android_checkin_proto.cellOperator=""
+#android_checkin_proto.simOperator=""
+#android_checkin_proto.roaming=""
+#android_checkin_proto.userNumber=0
+#19: "2019-12-05"を入れたいがなぜか19番がない
+
 android_checkin_request.checkin.MergeFrom(android_checkin_proto)
 
 
