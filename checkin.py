@@ -6,7 +6,6 @@ import requests
 import gzip
 from io import BytesIO
 android_checkin_request= AndroidCheckinRequest()
-print(dir(android_checkin_request))
 gservices_setting = GservicesSetting()
 android_checkin_proto = AndroidCheckinProto()
 android_build_proto = AndroidBuildProto()
@@ -39,12 +38,11 @@ try:
     headers = {'Content-Encoding': 'gzip', 'Content-Type': 'application/x-protobuf'}
     response = requests.post(checkin_url, data=compressed_data, headers=headers,verify=False)
     if response.status_code == 200:
-        print("Check-in successful!")
-        # Parse the response if needed
+        print("Check-in 成功!")
+        # パースする
         response_proto = AndroidCheckinProto()
         response_proto.ParseFromString(response.content)
-        # Do something with the response data
     else:
-        print(f"Check-in failed with status code {response.status_code}")
+        print(f"Check-in 失敗　status code {response.status_code}")
 except requests.RequestException as e:
-    print(f"Error during check-in: {str(e)}")
+    print(f"check-in中にエラーが発生: {str(e)}")
