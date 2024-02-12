@@ -17,7 +17,45 @@ device_configution_proto = DeviceConfigurationProto()
 # 値をセット
 android_checkin_request.id=0
 android_checkin_request.digest= "1-da39a3ee5e6b4b0d3255bfef95601890afd80709" 
+
+'''
+message AndroidBuildProto {
+  optional string id = 1;
+  optional string product = 2;
+  optional string carrier = 3;
+  optional string radio = 4;
+  optional string bootloader = 5;
+  optional string client = 6;
+  optional int64 timestamp = 7;
+  optional int32 googleServices = 8;
+  optional string device = 9;
+  optional int32 sdkVersion = 10;
+  optional string model = 11;
+  optional string manufacturer = 12;
+  optional string buildProduct = 13;
+  optional bool otaInstalled = 14;
+}
+
+'''
+#AndroidBuildProtoの値をセット
 android_build_proto.id="Fairphone/FP3/FP3:9/8901.2.A.0105.20191217/12171325:user/release-keys"
+android_build_proto.product="qcom"
+android_build_proto.carrier="Fairphone"
+android_build_proto.radio=".TA.3.0.c1-00565-8953_GEN_PACK-1,.TA.3.0.c1-00565-8953_GEN_PACK-1"
+android_build_proto.bootloader="unknown"
+android_build_proto.client="android-uniscope"
+android_build_proto.timestamp=1576561122 
+android_build_proto.googleServices=19275037 
+android_build_proto.device="FP3"
+android_build_proto.sdkVersion=28
+android_build_proto.model="FP3"
+android_build_proto.manufacturer="Fairphone"
+android_build_proto.buildProduct="FP3"
+android_build_proto.otaInstalled=False
+
+android_checkin_proto.build.MergeFrom(android_build_proto)
+android_checkin_request.checkin.MergeFrom(android_checkin_proto)
+
 
 #　バイナリデータに変換
 result_bytes = android_checkin_request.SerializeToString()
