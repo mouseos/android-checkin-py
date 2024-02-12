@@ -1,4 +1,4 @@
-from checkin_pb2 import AndroidCheckinRequest,GservicesSetting
+from checkin_pb2 import AndroidCheckinRequest,AndroidCheckinResponse,GservicesSetting
 from logs_pb2 import AndroidCheckinProto,AndroidBuildProto,AndroidEventProto,AndroidStatisticProto,AndroidIntentProto
 from config_pb2 import DeviceConfigurationProto
 import time
@@ -6,6 +6,7 @@ import requests
 import gzip
 from io import BytesIO
 android_checkin_request= AndroidCheckinRequest()
+android_checkin_respoonse= AndroidCheckinResponse()
 gservices_setting = GservicesSetting()
 android_checkin_proto = AndroidCheckinProto()
 android_build_proto = AndroidBuildProto()
@@ -64,6 +65,8 @@ message AndroidCheckinProto {
   optional string simOperator = 7;
   optional string roaming = 8;
   optional int32 userNumber = 9;
+  //追加
+  optional string securityPatch = 19;
 }
 '''
 android_checkin_proto.build.MergeFrom(android_build_proto)
@@ -75,7 +78,8 @@ android_checkin_proto.lastCheckinMsec=0
 #android_checkin_proto.simOperator=""
 #android_checkin_proto.roaming=""
 #android_checkin_proto.userNumber=0
-#19: "2019-12-05"を入れたいがなぜか19番がない
+#19: "2019-12-05"を入れたいがなぜか19番がないので勝手に追加
+android_checkin_proto.securityPatch="2019-12-05"
 
 android_checkin_request.checkin.MergeFrom(android_checkin_proto)
 
@@ -94,8 +98,9 @@ try:
     if response.status_code == 200:
         print("Check-in 成功!")
         # パースする
-        response_proto = AndroidCheckinProto()
+        response_proto = AndroidCheckinResponse()
         response_proto.ParseFromString(response.content)
+        print(response_proto)
     else:
         print(f"Check-in 失敗　status code {response.status_code}")
 except requests.RequestException as e:
