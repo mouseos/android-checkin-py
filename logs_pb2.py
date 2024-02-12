@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto2',
   serialized_options=b'\n\031com.android.checkin.proto',
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\nlogs.proto\"\x99\x02\n\x13\x41ndroidCheckinProto\x12!\n\x05\x62uild\x18\x01 \x01(\x0b\x32\x12.AndroidBuildProto\x12\x17\n\x0flastCheckinMsec\x18\x02 \x01(\x03\x12!\n\x05\x65vent\x18\x03 \x03(\x0b\x32\x12.AndroidEventProto\x12$\n\x04stat\x18\x04 \x03(\x0b\x32\x16.AndroidStatisticProto\x12\x16\n\x0erequestedGroup\x18\x05 \x03(\t\x12\x14\n\x0c\x63\x65llOperator\x18\x06 \x01(\t\x12\x13\n\x0bsimOperator\x18\x07 \x01(\t\x12\x0f\n\x07roaming\x18\x08 \x01(\t\x12\x12\n\nuserNumber\x18\t \x01(\x05\x12\x15\n\rsecurityPatch\x18\x13 \x01(\t\"\x94\x02\n\x11\x41ndroidBuildProto\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0f\n\x07product\x18\x02 \x01(\t\x12\x0f\n\x07\x63\x61rrier\x18\x03 \x01(\t\x12\r\n\x05radio\x18\x04 \x01(\t\x12\x12\n\nbootloader\x18\x05 \x01(\t\x12\x0e\n\x06\x63lient\x18\x06 \x01(\t\x12\x11\n\ttimestamp\x18\x07 \x01(\x03\x12\x16\n\x0egoogleServices\x18\x08 \x01(\x05\x12\x0e\n\x06\x64\x65vice\x18\t \x01(\t\x12\x12\n\nsdkVersion\x18\n \x01(\x05\x12\r\n\x05model\x18\x0b \x01(\t\x12\x14\n\x0cmanufacturer\x18\x0c \x01(\t\x12\x14\n\x0c\x62uildProduct\x18\r \x01(\t\x12\x14\n\x0cotaInstalled\x18\x0e \x01(\x08\"A\n\x11\x41ndroidEventProto\x12\x0b\n\x03tag\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t\x12\x10\n\x08timeMsec\x18\x03 \x01(\x03\"@\n\x15\x41ndroidStatisticProto\x12\x0b\n\x03tag\x18\x01 \x01(\t\x12\r\n\x05\x63ount\x18\x02 \x01(\x05\x12\x0b\n\x03sum\x18\x03 \x01(\x02\"\xaa\x01\n\x12\x41ndroidIntentProto\x12\x0e\n\x06\x61\x63tion\x18\x01 \x01(\t\x12\x0f\n\x07\x64\x61taUri\x18\x02 \x01(\t\x12\x10\n\x08mimeType\x18\x03 \x01(\t\x12\x11\n\tjavaClass\x18\x04 \x01(\t\x12(\n\x05\x65xtra\x18\x05 \x03(\n2\x19.AndroidIntentProto.Extra\x1a$\n\x05\x45xtra\x12\x0c\n\x04name\x18\x06 \x01(\t\x12\r\n\x05value\x18\x07 \x01(\tB\x1b\n\x19\x63om.android.checkin.proto'
+  serialized_pb=b'\n\nlogs.proto\"\x82\x02\n\x13\x41ndroidCheckinProto\x12!\n\x05\x62uild\x18\x01 \x01(\x0b\x32\x12.AndroidBuildProto\x12\x17\n\x0flastCheckinMsec\x18\x02 \x01(\x03\x12!\n\x05\x65vent\x18\x03 \x03(\x0b\x32\x12.AndroidEventProto\x12$\n\x04stat\x18\x04 \x03(\x0b\x32\x16.AndroidStatisticProto\x12\x16\n\x0erequestedGroup\x18\x05 \x03(\t\x12\x14\n\x0c\x63\x65llOperator\x18\x06 \x01(\t\x12\x13\n\x0bsimOperator\x18\x07 \x01(\t\x12\x0f\n\x07roaming\x18\x08 \x01(\t\x12\x12\n\nuserNumber\x18\t \x01(\x05\"\x94\x02\n\x11\x41ndroidBuildProto\x12\n\n\x02id\x18\x01 \x01(\t\x12\x0f\n\x07product\x18\x02 \x01(\t\x12\x0f\n\x07\x63\x61rrier\x18\x03 \x01(\t\x12\r\n\x05radio\x18\x04 \x01(\t\x12\x12\n\nbootloader\x18\x05 \x01(\t\x12\x0e\n\x06\x63lient\x18\x06 \x01(\t\x12\x11\n\ttimestamp\x18\x07 \x01(\x03\x12\x16\n\x0egoogleServices\x18\x08 \x01(\x05\x12\x0e\n\x06\x64\x65vice\x18\t \x01(\t\x12\x12\n\nsdkVersion\x18\n \x01(\x05\x12\r\n\x05model\x18\x0b \x01(\t\x12\x14\n\x0cmanufacturer\x18\x0c \x01(\t\x12\x14\n\x0c\x62uildProduct\x18\r \x01(\t\x12\x14\n\x0cotaInstalled\x18\x0e \x01(\x08\"A\n\x11\x41ndroidEventProto\x12\x0b\n\x03tag\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\t\x12\x10\n\x08timeMsec\x18\x03 \x01(\x03\"@\n\x15\x41ndroidStatisticProto\x12\x0b\n\x03tag\x18\x01 \x01(\t\x12\r\n\x05\x63ount\x18\x02 \x01(\x05\x12\x0b\n\x03sum\x18\x03 \x01(\x02\"\xaa\x01\n\x12\x41ndroidIntentProto\x12\x0e\n\x06\x61\x63tion\x18\x01 \x01(\t\x12\x0f\n\x07\x64\x61taUri\x18\x02 \x01(\t\x12\x10\n\x08mimeType\x18\x03 \x01(\t\x12\x11\n\tjavaClass\x18\x04 \x01(\t\x12(\n\x05\x65xtra\x18\x05 \x03(\n2\x19.AndroidIntentProto.Extra\x1a$\n\x05\x45xtra\x12\x0c\n\x04name\x18\x06 \x01(\t\x12\r\n\x05value\x18\x07 \x01(\tB\x1b\n\x19\x63om.android.checkin.proto'
 )
 
 
@@ -96,13 +96,6 @@ _ANDROIDCHECKINPROTO = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
-    _descriptor.FieldDescriptor(
-      name='securityPatch', full_name='AndroidCheckinProto.securityPatch', index=9,
-      number=19, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=b"".decode('utf-8'),
-      message_type=None, enum_type=None, containing_type=None,
-      is_extension=False, extension_scope=None,
-      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -116,7 +109,7 @@ _ANDROIDCHECKINPROTO = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=15,
-  serialized_end=296,
+  serialized_end=273,
 )
 
 
@@ -238,8 +231,8 @@ _ANDROIDBUILDPROTO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=299,
-  serialized_end=575,
+  serialized_start=276,
+  serialized_end=552,
 )
 
 
@@ -284,8 +277,8 @@ _ANDROIDEVENTPROTO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=577,
-  serialized_end=642,
+  serialized_start=554,
+  serialized_end=619,
 )
 
 
@@ -330,8 +323,8 @@ _ANDROIDSTATISTICPROTO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=644,
-  serialized_end=708,
+  serialized_start=621,
+  serialized_end=685,
 )
 
 
@@ -369,8 +362,8 @@ _ANDROIDINTENTPROTO_EXTRA = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=845,
-  serialized_end=881,
+  serialized_start=822,
+  serialized_end=858,
 )
 
 _ANDROIDINTENTPROTO = _descriptor.Descriptor(
@@ -428,8 +421,8 @@ _ANDROIDINTENTPROTO = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=711,
-  serialized_end=881,
+  serialized_start=688,
+  serialized_end=858,
 )
 
 _ANDROIDCHECKINPROTO.fields_by_name['build'].message_type = _ANDROIDBUILDPROTO

@@ -10,8 +10,6 @@ message AndroidCheckinProto {
   optional string simOperator = 7;
   optional string roaming = 8;
   optional int32 userNumber = 9;
-  //追加
-  optional string securityPatch = 19;
 }
 
 message AndroidBuildProto {

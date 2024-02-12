@@ -1,0 +1,2481 @@
+statsOk: true
+timeMsec: 1707739669662
+setting {
+  name: "android_id"
+  value: "3953170296797612226"
+}
+setting {
+  name: "appstate.internal_server_api_path"
+  value: "/appstate/v1whitelisted/states/"
+}
+setting {
+  name: "babel_call_media_type_refresh_max_delay_ms"
+  value: "120000"
+}
+setting {
+  name: "babel_call_media_type_refresh_min_delay_ms"
+  value: "60000"
+}
+setting {
+  name: "babel_conc_service_max_wakelock_hold_time_ms"
+  value: "40000"
+}
+setting {
+  name: "babel_conc_service_network_group_max_thread_pool_size"
+  value: "12"
+}
+setting {
+  name: "babel_conc_service_thread_timeout_seconds"
+  value: "300"
+}
+setting {
+  name: "babel_delay_initialization_latch_enable_serial_executor"
+  value: "true"
+}
+setting {
+  name: "babel_enable_force_warm_sync"
+  value: "true"
+}
+setting {
+  name: "babel_enable_gcm_message_receiver"
+  value: "true"
+}
+setting {
+  name: "babel_fix_double_ringing_issue_caused_by_sim_call_manager_change_key"
+  value: "false"
+}
+setting {
+  name: "babel_fix_double_ringing_issue_caused_by_sim_call_manager_change_key_v2"
+  value: "false"
+}
+setting {
+  name: "babel_fix_double_ringing_issue_caused_by_sim_call_manager_change_key_with_permission_check"
+  value: "false"
+}
+setting {
+  name: "babel_fix_stale_merged_contacts_details_key"
+  value: "true"
+}
+setting {
+  name: "babel_foreground_periodic_warm_sync_interval_ms"
+  value: "30000"
+}
+setting {
+  name: "babel_google_voice_add_balance_url"
+  value: "https://voice.google.com/billing?a=ac"
+}
+setting {
+  name: "babel_hangout_enable_h264_bitstream_rewriter"
+  value: "true"
+}
+setting {
+  name: "babel_hangout_encoder_quality_scaling_mode"
+  value: "1"
+}
+setting {
+  name: "babel_healthcheck_timer_enabled"
+  value: "true"
+}
+setting {
+  name: "babel_incremental_load_wakelock_fix_r22"
+  value: "true"
+}
+setting {
+  name: "babel_incremental_load_wakelock_fix_r23"
+  value: "true"
+}
+setting {
+  name: "babel_participant_fast_poll_period_millis"
+  value: "10000"
+}
+setting {
+  name: "babel_phone_verification"
+  value: "true"
+}
+setting {
+  name: "babel_plog_flush_delay_ms"
+  value: "500"
+}
+setting {
+  name: "babel_rtcs_max_wakelock_hold_time_ms"
+  value: "86400000"
+}
+setting {
+  name: "babel_send_message_event_observed_to_reply"
+  value: "true"
+}
+setting {
+  name: "babel_send_silent_crash_feedback"
+  value: "true"
+}
+setting {
+  name: "babel_sms_dep_banner_persistent"
+  value: "false"
+}
+setting {
+  name: "babel_sms_dep_enabled"
+  value: "true"
+}
+setting {
+  name: "babel_sms_dep_notif_19_enabled"
+  value: "true"
+}
+setting {
+  name: "babel_sms_dep_snackbar_enabled"
+  value: "false"
+}
+setting {
+  name: "babel_sms_dep_standalone_19_enabled"
+  value: "true"
+}
+setting {
+  name: "babel_sms_force_dep_19_enabled"
+  value: "true"
+}
+setting {
+  name: "babel_stickers_query_limit_ms"
+  value: "1000000000000"
+}
+setting {
+  name: "betterbug_enable_battery_metric"
+  value: "true"
+}
+setting {
+  name: "betterbug_enable_crash_metric"
+  value: "true"
+}
+setting {
+  name: "betterbug_enable_memory_metric"
+  value: "true"
+}
+setting {
+  name: "betterbug_enable_network_metric"
+  value: "true"
+}
+setting {
+  name: "betterbug_enable_package_metric"
+  value: "true"
+}
+setting {
+  name: "betterbug_enable_timer_metric"
+  value: "true"
+}
+setting {
+  name: "books:comics_collection_id"
+  value: "coll_1706"
+}
+setting {
+  name: "books:enable_non_comics_series"
+  value: "true"
+}
+setting {
+  name: "books:enable_onboarding"
+  value: "true"
+}
+setting {
+  name: "books:enable_passage_snapshot"
+  value: "false"
+}
+setting {
+  name: "books:enable_quick_setting_edu"
+  value: "false"
+}
+setting {
+  name: "books:fail_fast_after_manifest_deletion"
+  value: "false"
+}
+setting {
+  name: "books:first_run_activity_timeout_ms"
+  value: "5000"
+}
+setting {
+  name: "books:free_user_category_display"
+  value: "TOP"
+}
+setting {
+  name: "books:max_upload_size_mb"
+  value: "100"
+}
+setting {
+  name: "books:nis_notify"
+  value: "true"
+}
+setting {
+  name: "books:notes_export_enabled"
+  value: "true"
+}
+setting {
+  name: "books:obv3_done_button"
+  value: "V1"
+}
+setting {
+  name: "books:obv3_sample_page_type"
+  value: "V1"
+}
+setting {
+  name: "books:obv3_welcome_page_type"
+  value: "V2"
+}
+setting {
+  name: "books:paid_user_category_display"
+  value: "BOTTOM"
+}
+setting {
+  name: "books:parental_controls_enabled"
+  value: "true"
+}
+setting {
+  name: "books:parental_controls_setting_enabled"
+  value: "true"
+}
+setting {
+  name: "books:pdr_notify"
+  value: "true"
+}
+setting {
+  name: "books:play_analytics_server"
+  value: "https://play.googleapis.com/play/log"
+}
+setting {
+  name: "books:playlog_anonymous_enabled"
+  value: "true"
+}
+setting {
+  name: "books:playlog_enabled"
+  value: "false"
+}
+setting {
+  name: "books:playlog_v2_enabled"
+  value: "true"
+}
+setting {
+  name: "books:read_now_cluster_refresh_minutes_oplusplus"
+  value: "1440"
+}
+setting {
+  name: "books:reading_back_equals_up"
+  value: "true"
+}
+setting {
+  name: "books:rwe_notify"
+  value: "true"
+}
+setting {
+  name: "books:show_empty_uploaded"
+  value: "true"
+}
+setting {
+  name: "books:use_fast_book_open_api_2"
+  value: "true"
+}
+setting {
+  name: "c2dm_auth_token"
+  value: "1"
+}
+setting {
+  name: "calculator_primes_apksize"
+  value: "true"
+}
+setting {
+  name: "calculator_primes_battery"
+  value: "true"
+}
+setting {
+  name: "calculator_primes_crash"
+  value: "true"
+}
+setting {
+  name: "calculator_primes_latency"
+  value: "true"
+}
+setting {
+  name: "calculator_primes_memory"
+  value: "true"
+}
+setting {
+  name: "camera:camcorder.metadata"
+  value: "false"
+}
+setting {
+  name: "camera:camera.coach.horizon_level"
+  value: "true"
+}
+setting {
+  name: "camera:camera.lenslite.enable_foreign_contact_recognition"
+  value: "false"
+}
+setting {
+  name: "camera:camera.lenslite.enable_text_wifi_credentials"
+  value: "false"
+}
+setting {
+  name: "camera:camera.lenslite.force_cpu_processing"
+  value: "false"
+}
+setting {
+  name: "camera:camera.lenslite.trivial_feature_enabled_bits"
+  value: "0x0"
+}
+setting {
+  name: "ce.cm.allow_user_feedback"
+  value: "true"
+}
+setting {
+  name: "ce.cm.feedback_cooldown"
+  value: "36"
+}
+setting {
+  name: "ce.cm.filtered_data_fail_cause"
+  value: "4111"
+}
+setting {
+  name: "ce.cm.ignored_call_drop_cause_for_bugreport"
+  value: "61441"
+}
+setting {
+  name: "ce.cm.ims_reg_check_whitelist_carrier_ids"
+  value: "1, 1839, 1404, 1345, 1187, 1788, 2146, 2018, 1505"
+}
+setting {
+  name: "ce.cm.notify_bad_feedback"
+  value: "true"
+}
+setting {
+  name: "ce.cm.notify_mmssms_db_lost"
+  value: "true"
+}
+setting {
+  name: "ce.cm.notify_no_ims_registration"
+  value: "false"
+}
+setting {
+  name: "ce.cm.notify_no_wfc_registration"
+  value: "false"
+}
+setting {
+  name: "ce.wa.att.enable_device_build_solution"
+  value: "true"
+}
+setting {
+  name: "ce.wa.o2.enable_device_build_solution"
+  value: "true"
+}
+setting {
+  name: "ce.wa.spcs.use_first_imei"
+  value: "true"
+}
+setting {
+  name: "checkin_collect_mvno_attributes"
+  value: "true"
+}
+setting {
+  name: "checkin_interval"
+  value: "7200"
+}
+setting {
+  name: "checkin_logging_policy"
+  value: "NONE"
+}
+setting {
+  name: "checkin_trigger_on_sim_change"
+  value: "true"
+}
+setting {
+  name: "chromecast:assistant_supported_languages"
+  value: "en-US,en-GB,en-CA,fr-CA,en-AU"
+}
+setting {
+  name: "chromecast:enable_periodic_forced_ontrimmemory"
+  value: "true"
+}
+setting {
+  name: "chromecast:enable_personalized_backdrop"
+  value: "true"
+}
+setting {
+  name: "chromecast:mu_supported_languages"
+  value: "en-US,en-GB,en-AU"
+}
+setting {
+  name: "deskclock:audio_ringtone_haptics_supported_devices"
+  value: ""
+}
+setting {
+  name: "deskclock:calm_country_codes"
+  value: "AU,BR,CA,DE,ES,FR,GB,JP,KR,MX,PT,US"
+}
+setting {
+  name: "deskclock:cough_and_snore_supported_devices"
+  value: "oriole,raven,cheetah,panther"
+}
+setting {
+  name: "deskclock:enable_timer_metric"
+  value: "true"
+}
+setting {
+  name: "deskclock:premium_haptics_experience_supported_devices"
+  value: "raven,oriole"
+}
+setting {
+  name: "deskclock:recorder_app_version_code"
+  value: "40006100"
+}
+setting {
+  name: "deskclock:silent_ringtone_haptics_supported_devices"
+  value: ""
+}
+setting {
+  name: "deskclock:spotify_country_codes"
+  value: "AD,AE,AL,AR,AT,AU,BA,BE,BG,BH,BO,BR,BY,CA,CH,CL,CO,CR,CY,CZ,DE,DK,DO,DZ,EC,EE,EG,ES,FI,FR,GB,GR,GT,HK,HN,HR,HU,ID,IE,IL,IN,IS,IT,JO,JP,KW,KZ,LB,LI,LT,LU,LV,MA,MC,MD,ME,MK,MT,MX,MY,NI,NL,NO,NZ,OM,PA,PE,PH,PL,PS,PT,PY,QA,RO,RS,RU,SA,SE,SG,SI,SK,SV,TH,TN,TR,TW,UA,US,UY,VN,ZA"
+}
+setting {
+  name: "deskclock:sunrise_supported_devices"
+  value: "blueline,crosshatch,coral,flame,redfin,raven,oriole,cheetah,panther"
+}
+setting {
+  name: "deskclock:timezone_api_key"
+  value: "AIzaSyBUcCPilPlw0sWDaXdmNScHS4N0jm31D-I"
+}
+setting {
+  name: "deskclock:ytm_country_codes"
+  value: "AE,AR,AS,AT,AU,AW,BA,BE,BG,BH,BM,BO,BR,BY,CA,CH,CL,CO,CR,CY,CZ,DE,DK,DO,EC,EE,EG,ES,FI,FR,GB,GF,GP,GR,GT,GU,HK,HN,HR,HU,ID,IE,IL,IN,IS,IT,JP,KR,KW,KY,LB,LI,LT,LU,LV,MK,MP,MT,MX,MY,NG,NI,NL,NO,NZ,OM,PA,PE,PF,PG,PH,PL,PR,PT,PY,QA,RO,RS,RU,SA,SE,SG,SI,SK,SV,TC,TH,TR,TW,UA,US,UY,VE,VI,ZA"
+}
+setting {
+  name: "device_country"
+  value: "jp"
+}
+setting {
+  name: "device_registration_time"
+  value: "1707739200000"
+}
+setting {
+  name: "device_update_detail_url"
+  value: "https://support.google.com/android/answer/7680439?hl=en"
+}
+setting {
+  name: "dialer_reverse_lookup_min_version_enabled"
+  value: "1"
+}
+setting {
+  name: "display_dialog_window_period"
+  value: "1700-0500"
+}
+setting {
+  name: "feedback_tos_pretty_url"
+  value: "https://tools.google.com/userfeedback/external/android/tos.html"
+}
+setting {
+  name: "feedback_tos_url"
+  value: "https://tools.google.com/userfeedback/external/android/tos.html"
+}
+setting {
+  name: "finksy.verify_apps_enable_vole_v3"
+  value: "true"
+}
+setting {
+  name: "finsky.Checkin__disable_checkin_receiver"
+  value: "true"
+}
+setting {
+  name: "finsky.DownloadService__killswitch_enable_aidl_ipc_service"
+  value: "true"
+}
+setting {
+  name: "finsky.GooglePlayProtect__enable_blocking_executor_for_install_verification"
+  value: "true"
+}
+setting {
+  name: "finsky.PhoneskySetup__enable_p2p_restore_service"
+  value: "true"
+}
+setting {
+  name: "finsky.additional_experiments"
+  value: ""
+}
+setting {
+  name: "finsky.app_discovery_caller_package_name_whitelist"
+  value: "com.google.android.apps.nexuslauncher,com.samsung.android.app.galaxyfinder,org.chromium.arc.gms,com.motorola.launcher3,com.android.launcher3,com.sec.android.app.launcher"
+}
+setting {
+  name: "finsky.app_restore_retry_delay_exponential_base"
+  value: "1.0"
+}
+setting {
+  name: "finsky.app_restore_retry_download_blacklist"
+  value: "198,404,498,908,940,944"
+}
+setting {
+  name: "finsky.assist_card_dismissal_token_cache_timeout_ms"
+  value: "7776000000"
+}
+setting {
+  name: "finsky.auto_update_wifi_check_interval"
+  value: "3600000"
+}
+setting {
+  name: "finsky.checkin_expid_26025069"
+  value: "true"
+}
+setting {
+  name: "finsky.checkin_expid_26025958"
+  value: "true"
+}
+setting {
+  name: "finsky.checkin_expid_50632843"
+  value: "true"
+}
+setting {
+  name: "finsky.checkout_privacy_policy_url"
+  value: "https://payments.google.com/files/privacy.html?hl=%lang%"
+}
+setting {
+  name: "finsky.daily_hygiene_preload_experiments"
+  value: "true"
+}
+setting {
+  name: "finsky.daily_hygiene_probe_all_accounts"
+  value: "true"
+}
+setting {
+  name: "finsky.device_owner_install_policy_allowed_packages"
+  value: "com.google.android.gms,com.google.android.apps.enterprise.dmagent"
+}
+setting {
+  name: "finsky.device_wide_non_work_profile_phas_enabled"
+  value: "true"
+}
+setting {
+  name: "finsky.device_wide_unknown_source_block_v4"
+  value: "true"
+}
+setting {
+  name: "finsky.dfe.send_additional_headers_unauth_requests"
+  value: "false"
+}
+setting {
+  name: "finsky.dfe_search_suggestions_enabled"
+  value: "true"
+}
+setting {
+  name: "finsky.download_bytes_mobile_recommended"
+  value: "104883200"
+}
+setting {
+  name: "finsky.early_update_timeout_ms"
+  value: "15000"
+}
+setting {
+  name: "finsky.ec_choice_min_chrome_version"
+  value: "372899999"
+}
+setting {
+  name: "finsky.emergency_self_update.escape_pod_url"
+  value: "https://www.gstatic.com/play/store/escapepod/standard/config/config.binarypb"
+}
+setting {
+  name: "finsky.emergency_self_update.is_enabled"
+  value: "true"
+}
+setting {
+  name: "finsky.emergency_self_update.target_versions"
+  value: ""
+}
+setting {
+  name: "finsky.enable_android_auto_direct_purchases"
+  value: "true"
+}
+setting {
+  name: "finsky.enable_details_api"
+  value: "true"
+}
+setting {
+  name: "finsky.enable_gaia_recovery"
+  value: "false"
+}
+setting {
+  name: "finsky.enable_lite_verify_installed_packages"
+  value: "false"
+}
+setting {
+  name: "finsky.enable_ok_http_tls_1_2_on_JB_plus"
+  value: "false"
+}
+setting {
+  name: "finsky.enable_redeem_gift_card_menu"
+  value: "true"
+}
+setting {
+  name: "finsky.enable_unauthenticated_app_updates"
+  value: "false"
+}
+setting {
+  name: "finsky.enable_webapk_install_policy"
+  value: "true"
+}
+setting {
+  name: "finsky.extra_menu_item_url"
+  value: "https://support.google.com/googleplay/?p=about_play"
+}
+setting {
+  name: "finsky.gearhead.external_hosting_lockout"
+  value: "false"
+}
+setting {
+  name: "finsky.iabv3_subscriptions_enabled"
+  value: "true"
+}
+setting {
+  name: "finsky.include_sim_operator_in_cache_key"
+  value: "false"
+}
+setting {
+  name: "finsky.install_api.enabled"
+  value: "true"
+}
+setting {
+  name: "finsky.install_queue.unconditional_overwrite_reasons"
+  value: "bulk_update,early_update,enterprise_auto_install,enterprise_auto_install_without_launcher_icon,package_update_service,single_install,tickle,developer_triggered_update,rapid_auto_update"
+}
+setting {
+  name: "finsky.installer_postpone_regular_restores_during_suw"
+  value: "true"
+}
+setting {
+  name: "finsky.kill_switch_ds_counters"
+  value: "true"
+}
+setting {
+  name: "finsky.loyalty_signup_interstitial_image_url"
+  value: "http://lh3.googleusercontent.com/_6kFk9-qfhMvMNXYS87dEGfHpjGkWlaBEYeoeUkOj7CeRJ8OWndApLBUJ0VKGf4yasxu"
+}
+setting {
+  name: "finsky.music_app_subscription_resignup_enabled"
+  value: "true"
+}
+setting {
+  name: "finsky.offline_autoscan_enabled"
+  value: "true"
+}
+setting {
+  name: "finsky.offline_autoscan_logging_enabled"
+  value: "true"
+}
+setting {
+  name: "finsky.offline_autoscan_unconsented_devices_enabled"
+  value: "false"
+}
+setting {
+  name: "finsky.peer_app_sharing_api.whitelist"
+  value: "com.google.android.apps.nbu.files:IHr5oTOmMMQkagbHnAmUanCED0cC7luqU/N5G1N7DxQ,5mm9+LAnvQZ2ECRnHSsDyudQVugIEi4CnIviTxdwbXQ;com.google.android.gms:GXWy8XF3vIml3/MfnmSmyuKBpT3B0dWbHRR/4cgq+gA;com.lenovo.anyshare.gps:vRAqlGaYlgeNucZlshu9PXZpH/Zq6XUZo2NMNMOgJUI;cn.xender:LcUe2xGQXnTnEsEjtCzorW9iNofZEusFHxQRZkbvmrM;com.test.app.p2papp:4zgXuPGanK8Aq7jDeSZGpgQL/zGZ6riVIASvOds9w2Y;"
+}
+setting {
+  name: "finsky.play_log_server_url"
+  value: "https://play.googleapis.com/play/log"
+}
+setting {
+  name: "finsky.prepare_purchase_cache_sku_list_hash_whitelist"
+  value: "573493260,-1466115739,2042585595"
+}
+setting {
+  name: "finsky.prepare_purchase_cache_whitelist"
+  value: "com.supercell.clashofclans,com.supercell.boombeach,jp.co.mixi.monsterstrike"
+}
+setting {
+  name: "finsky.pss.wl_v2_3p"
+  value: "com.sec.android.easyMover:34DF0E7A9F1CF1892E45C056B4973CD81CCF148A4050D11AEA4AC5A65F900A42,C8A2E9BCCF597C2FB6DC66BEE293FC13F2FC47EC77BC6B2B0D52C11F51192AB8,0A012131B1BDF9E80EF97D37F3B48362BE363A464C8445ECF83627EBE8493A1E"
+}
+setting {
+  name: "finsky.read_book_url"
+  value: "https://play.google.com/books/reader"
+}
+setting {
+  name: "finsky.recovery_mode.enabled_versions"
+  value: "81280000"
+}
+setting {
+  name: "finsky.recovery_mode.event_logging_enabled"
+  value: "true"
+}
+setting {
+  name: "finsky.recovery_mode.is_enabled"
+  value: "false"
+}
+setting {
+  name: "finsky.recovery_mode.log_recovered_state_enabled"
+  value: "true"
+}
+setting {
+  name: "finsky.recovery_mode.logger.process_safe_logging_enabled"
+  value: "81400000"
+}
+setting {
+  name: "finsky.recovery_mode.recovered_state_logging_enabled"
+  value: "false"
+}
+setting {
+  name: "finsky.recovery_mode.ssu_v2_versions"
+  value: "81430000"
+}
+setting {
+  name: "finsky.safe_mode.is_enabled"
+  value: "false"
+}
+setting {
+  name: "finsky.safe_self_update.throttle_period_ms"
+  value: "43200000"
+}
+setting {
+  name: "finsky.send_mvno_related_device_attributes"
+  value: "true"
+}
+setting {
+  name: "finsky.subscription_explore_button_url"
+  value: "https://play.google.com/store/apps/editorial_collection/promotion_topic_30031d8_subs_center_topicpage"
+}
+setting {
+  name: "finsky.support_edit_payment_method_url"
+  value: "https://payments.google.com/manage#paymentMethods"
+}
+setting {
+  name: "finsky.third_party_app_overlay_whitelist"
+  value: "com.google.android.vr.home,com.google.android.vr.home.dev,com.google.android.googlequicksearchbox,com.google.android.play.games,com.google.android.apps.chromecast.app,com.pinterest.dev,com.google.android.instantapps.supervisor,com.google.android.videos,com.google.android.apps.freighter,com.google.android.apps.freighter.beta,com.google.android.apps.travel.onthego,com.google.android.gms,com.google.android.inputmethod.latin,com.google.android.inputmethod.latin.dev,com.google.android.inputmethod.latin.canary,com.google.vr.apps.ornament,com.google.vr.apps.ornament.dev,com.google.android.apps.vega,com.google.android.apps.tycho,com.google.ar.lens,com.google.ar.lens.dev,com.google.android.apps.dreamliner,com.google.android.deskclock,com.google.android.apps.tachyon,com.google.android.gm,com.google.samples.apps.cardboarddemo,com.google.vr.cardboard.paperscope,com.google.android.apps.tips,com.google.android.apps.nbu.files"
+}
+setting {
+  name: "finsky.unauth_safe_mode.is_enabled"
+  value: "true"
+}
+setting {
+  name: "finsky.verify_apps_amputation_allow_re_enable"
+  value: "true"
+}
+setting {
+  name: "finsky.verify_apps_amputation_enabled"
+  value: "true"
+}
+setting {
+  name: "finsky.verify_apps_amputation_log_errors"
+  value: "true"
+}
+setting {
+  name: "finsky.verify_apps_auto_disable_allow_re_enable_v1"
+  value: "true"
+}
+setting {
+  name: "finsky.verify_apps_auto_disable_enabled_v1"
+  value: "true"
+}
+setting {
+  name: "finsky.verify_apps_auto_disable_log_errors_v1"
+  value: "true"
+}
+setting {
+  name: "finsky.verify_apps_auto_disable_re_enable_false_positives_v1"
+  value: "true"
+}
+setting {
+  name: "finsky.verify_apps_autoscan_upload_installer_info"
+  value: "true"
+}
+setting {
+  name: "finsky.verify_apps_broadcast_pha_event"
+  value: "true"
+}
+setting {
+  name: "finsky.verify_apps_enable_multitable_datastore"
+  value: "true"
+}
+setting {
+  name: "finsky.verify_apps_hostname"
+  value: "android-safebrowsing.google.com"
+}
+setting {
+  name: "finsky.verify_apps_implicit_suppress_warning"
+  value: "true"
+}
+setting {
+  name: "finsky.verify_apps_log_snet_id_in_verification_errors"
+  value: "true"
+}
+setting {
+  name: "finsky.verify_apps_min_gms_version_for_consent_in_secure_settings"
+  value: "8400000"
+}
+setting {
+  name: "finsky.verify_apps_offline_managed_device_policy_enabled"
+  value: "true"
+}
+setting {
+  name: "finsky.verify_apps_report_autoscan_lite_scan_time"
+  value: "true"
+}
+setting {
+  name: "finsky.verify_apps_restore_notifications_enabled"
+  value: "true"
+}
+setting {
+  name: "finsky.verify_system_packages_probability"
+  value: ".7"
+}
+setting {
+  name: "finsky.wear.auto_install_enable"
+  value: "true"
+}
+setting {
+  name: "finsky.wear.auto_install_uninstall_blockedlist"
+  value: "com.google.android.apps.enterprise.dmagent,com.weather.Weather"
+}
+setting {
+  name: "finsky.wear.auto_install_uninstall_whitelist"
+  value: ""
+}
+setting {
+  name: "finsky.wear.auto_uninstall_enable"
+  value: "true"
+}
+setting {
+  name: "finsky.wear.auto_update_whitelist"
+  value: "com.google.android.wearable.app,com.vinodkrishnan.testapp,com.google.android.apps.fitness"
+}
+setting {
+  name: "finsky.wear.self_update_enabled"
+  value: "true"
+}
+setting {
+  name: "finsky.zapp.client.controller"
+  value: "-"
+}
+setting {
+  name: "finsky.zapp.clients"
+  value: "com.google.android.gms,zapp.demo,example.android.dvrdcl.demo"
+}
+setting {
+  name: "finsky.zapp.rate_limit_ms"
+  value: "1000"
+}
+setting {
+  name: "fmradio:min_agsa_version"
+  value: "500611956"
+}
+setting {
+  name: "fmradio:music_search_enabled"
+  value: "1"
+}
+setting {
+  name: "gads:enable_content_fetching"
+  value: "false"
+}
+setting {
+  name: "gads:js_flags:update_interval"
+  value: "14400000"
+}
+setting {
+  name: "games.cache_enabled"
+  value: "false"
+}
+setting {
+  name: "games.enable_metagame"
+  value: "true"
+}
+setting {
+  name: "games.google_settings_enabled"
+  value: "true"
+}
+setting {
+  name: "games.play_now_card_density"
+  value: "1"
+}
+setting {
+  name: "games.play_now_ordering"
+  value: "5"
+}
+setting {
+  name: "games.player_id_prefix"
+  value: ""
+}
+setting {
+  name: "games.use_in_app_purchase_flow"
+  value: "false"
+}
+setting {
+  name: "games.use_mendel_experiments"
+  value: "true"
+}
+setting {
+  name: "games.use_plus_upsell_dialog"
+  value: "true"
+}
+setting {
+  name: "games.use_server_game_theme_color"
+  value: "true"
+}
+setting {
+  name: "gmail-ads-play-store-app-details"
+  value: "market://details"
+}
+setting {
+  name: "gmail-cal-promo-event-text"
+  value: "true"
+}
+setting {
+  name: "gmail-cal-promo-event-title"
+  value: "1"
+}
+setting {
+  name: "gmail-cal-promo-flight-title"
+  value: "1"
+}
+setting {
+  name: "gmail-cal-promo-hotel-title"
+  value: "1"
+}
+setting {
+  name: "gmail-cal-promo-meal-title"
+  value: "0"
+}
+setting {
+  name: "gmail-xplat-tracing-sampling-btd-exp"
+  value: "500"
+}
+setting {
+  name: "gmail_css_style_support"
+  value: "true"
+}
+setting {
+  name: "gmail_discard_error_uphill_op"
+  value: "1"
+}
+setting {
+  name: "gmail_discard_error_uphill_op_new"
+  value: "1"
+}
+setting {
+  name: "gmail_enable_block_sender"
+  value: "true"
+}
+setting {
+  name: "gmail_enable_custom_tabs"
+  value: "false"
+}
+setting {
+  name: "gmail_enable_custom_tabs_new"
+  value: "true"
+}
+setting {
+  name: "gmail_gview_url"
+  value: "https://drive.google.com/viewerng/viewer?embedded=true&a=v&pid=gmail&user=%s&thid=%s&attid=%s&mt=%s"
+}
+setting {
+  name: "gmail_host"
+  value: "gmail.com"
+}
+setting {
+  name: "gmail_max_preview_image_size"
+  value: "2097152"
+}
+setting {
+  name: "gmail_num_retry_uphill_op"
+  value: "45"
+}
+setting {
+  name: "gmail_use_multipart_protobuf"
+  value: "1"
+}
+setting {
+  name: "gmail_use_senna"
+  value: "true"
+}
+setting {
+  name: "gmail_wait_time_retry_uphill_op"
+  value: "129600"
+}
+setting {
+  name: "gms_disable:com.google.android.apps.walletnfcrel"
+  value: "0:disabled,930007740:enabled"
+}
+setting {
+  name: "google_express_courierapp:crash_metric"
+  value: "true"
+}
+setting {
+  name: "google_express_courierapp:memory_metric"
+  value: "true"
+}
+setting {
+  name: "google_express_courierapp:network_metric"
+  value: "true"
+}
+setting {
+  name: "google_express_courierapp:timer_metric"
+  value: "true"
+}
+setting {
+  name: "google_express_storeoms:crash_metric"
+  value: "true"
+}
+setting {
+  name: "google_express_storeoms:memory_metric"
+  value: "true"
+}
+setting {
+  name: "google_express_storeoms:network_metric"
+  value: "true"
+}
+setting {
+  name: "google_express_storeoms:timer_metric"
+  value: "true"
+}
+setting {
+  name: "google_login_generic_auth_service"
+  value: "mail"
+}
+setting {
+  name: "google_login_public_key"
+  value: "AAAAgMom/1a/v0lblO2Ubrt60J2gcuXSljGFQXgcyZWveWLEwo6prwgi3iJIZdodyhKZQrNWp5nKJ3srRXcUW+F1BD3baEVGcmEgqaLZUNBjm057pKRI16kB0YppeGx5qIQ5QjKzsR8ETQbKLNWgRY0QRNVz34kMJR3P/LgHax/6rmf5AAAAAwEAAQ=="
+}
+setting {
+  name: "google_services:ah"
+  value: "Google Apps||Allows applications to sign in to Google Apps using the account(s) stored on this phone."
+}
+setting {
+  name: "google_services:doraemon"
+  value: "Google Catalogs||Allows applications to sign in to the Google Catalogs service using the account(s) stored on this phone."
+}
+setting {
+  name: "google_services:finance"
+  value: "Google Finance||Allows applications to sign in to Google Finance using the account(s) stored on this phone."
+}
+setting {
+  name: "google_services:geowiki"
+  value: "Google Map maker||Allows applications to sign in to the Google Map maker service using the account(s) stored on this phone."
+}
+setting {
+  name: "google_services:goanna_mobile"
+  value: "Google Tasks||Allows applications to sign in to the Google Tasks service using the account(s) stored on this phone."
+}
+setting {
+  name: "google_services:grandcentral"
+  value: "Google Voice||Allows applications to sign in to Google Voice using the account(s) stored on this phone."
+}
+setting {
+  name: "google_services:local"
+  value: "Google Maps||Allows applications to sign in to Google Maps using the account(s) stored on this phone."
+}
+setting {
+  name: "google_services:notebook"
+  value: "Google Notebook||Allows applications to sign in to Google Notebook using the account(s) stored on this phone."
+}
+setting {
+  name: "google_services:panoramio"
+  value: "Panoramio||Allows applications to sign in to the Panoramio service using the account(s) stored on this phone."
+}
+setting {
+  name: "google_services:reader"
+  value: "Google Reader||Allows applications to sign in to the Google Reader service using the account(s) stored on this phone."
+}
+setting {
+  name: "google_services:speechpersonalization"
+  value: "Personalized Speech Recognition||Allows applications to sign in to the Personalized Speech Recognition service using the account(s) stored on this phone."
+}
+setting {
+  name: "google_setup:phenotype:auth_early_update_from_zapp_enabled"
+  value: "false"
+}
+setting {
+  name: "google_wallet:issuer_whitelist"
+  value: ""
+}
+setting {
+  name: "google_wallet:min_supported_version"
+  value: "930000000"
+}
+setting {
+  name: "google_wallet:payment_control_scope"
+  value: ""
+}
+setting {
+  name: "google_wallet:show_android_pay_settings"
+  value: "true"
+}
+setting {
+  name: "google_wallet:show_get_the_app_link"
+  value: "true"
+}
+setting {
+  name: "google_wallet:tp2_barcode_libraries"
+  value: "barhopper"
+}
+setting {
+  name: "google_wallet:tp2_developer_preview_error"
+  value: "false"
+}
+setting {
+  name: "googlevoice_enable_primes_crash_monitoring"
+  value: "true"
+}
+setting {
+  name: "googlevoice_enable_primes_jank_monitoring"
+  value: "true"
+}
+setting {
+  name: "googlevoice_enable_primes_memory_monitoring"
+  value: "true"
+}
+setting {
+  name: "googlevoice_enable_primes_network_monitoring"
+  value: "true"
+}
+setting {
+  name: "googlevoice_enable_primes_package_monitoring"
+  value: "true"
+}
+setting {
+  name: "googlevoice_enable_primes_timer_monitoring"
+  value: "true"
+}
+setting {
+  name: "googlevoice_enable_silent_feedback"
+  value: "true"
+}
+setting {
+  name: "googlevoice_googlevoice_hats_satisfaction_survey_sampling_rate_basis_points"
+  value: "10000"
+}
+setting {
+  name: "googlevoice_hats_enable_satisfaction_survey"
+  value: "true"
+}
+setting {
+  name: "googlevoice_hats_satisfaction_survey_sampling_rate_basis_points"
+  value: "10000"
+}
+setting {
+  name: "googlevoice_hats_time_after_update_satisfaction_survey_days"
+  value: "5"
+}
+setting {
+  name: "gtalk_clock_skew_threshold_ms"
+  value: "300000"
+}
+setting {
+  name: "gtalk_flickr_photo_info_url"
+  value: "http://api.flickr.com/services/rest/?method=flickr.photos.getinfo&photo_id=%s&api_key=%s"
+}
+setting {
+  name: "gtalk_flickr_photo_url"
+  value: "http://farm%s.static.flickr.com/%s/%s_%s_m.jpg"
+}
+setting {
+  name: "gtalk_picasa_album_url"
+  value: "http://picasaweb.google.com/data/feed/api/user/%s/album/%s"
+}
+setting {
+  name: "gtalk_terms_of_service_url"
+  value: "www.google.com/talk/terms.html"
+}
+setting {
+  name: "gtalk_url_scraping_for_jpg"
+  value: "true"
+}
+setting {
+  name: "gtalk_youtube_video_url"
+  value: "http://gdata.youtube.com/feeds/api/videos/%s"
+}
+setting {
+  name: "instantapps:reinstall_supervisor_on_link_tap"
+  value: "false"
+}
+setting {
+  name: "maps:shgn_audio_modem_broadcast_volume"
+  value: "11"
+}
+setting {
+  name: "maps_enable_friend_finder"
+  value: "1"
+}
+setting {
+  name: "maps_enable_navigation"
+  value: "1"
+}
+setting {
+  name: "market_force_checkin"
+  value: "1"
+}
+setting {
+  name: "mms_maximum_message_size"
+  value: "307200"
+}
+setting {
+  name: "mms_x_wap_profile_url"
+  value: "http://www.google.com/oha/rdf/ua-profile-kila.xml"
+}
+setting {
+  name: "mobile_transcoder_url"
+  value: "http://www.google.com/gwt/n?u=%s"
+}
+setting {
+  name: "music_autocache_opt_in_default"
+  value: "false"
+}
+setting {
+  name: "music_cast_v2_app_id"
+  value: "2872939A"
+}
+setting {
+  name: "music_enable_chromecast_wake_lock"
+  value: "true"
+}
+setting {
+  name: "music_enable_oauth2_authentication"
+  value: "true"
+}
+setting {
+  name: "music_enable_play_logging"
+  value: "false"
+}
+setting {
+  name: "music_enable_situations_for_leanback_environment"
+  value: "true"
+}
+setting {
+  name: "music_enable_track_stats_upsync"
+  value: "true"
+}
+setting {
+  name: "music_enable_tracks_upsync"
+  value: "true"
+}
+setting {
+  name: "music_enable_tracks_upsync_deletion"
+  value: "true"
+}
+setting {
+  name: "music_playlist_prefetch_count"
+  value: "3"
+}
+setting {
+  name: "music_show_coupon_status"
+  value: "true"
+}
+setting {
+  name: "music_unaccepted_user_reduce_sync"
+  value: "true"
+}
+setting {
+  name: "newsstand:background_auth_success_notification"
+  value: "true"
+}
+setting {
+  name: "newsstand:error_logging_severe_all"
+  value: "true"
+}
+setting {
+  name: "newsstand:on_boot_notification_registration_existing_user"
+  value: "true"
+}
+setting {
+  name: "newsstand:on_boot_notification_registration_existing_user_online_check"
+  value: "true"
+}
+setting {
+  name: "overdue_dialog_escalation_phases"
+  value: "172800000,0,1036800000"
+}
+setting {
+  name: "overdue_dialog_retry_delay_period_phases"
+  value: "604800000"
+}
+setting {
+  name: "parental_control_timeout_in_ms"
+  value: "604800000"
+}
+setting {
+  name: "people.periodic_sync_interval_sec"
+  value: "172800"
+}
+setting {
+  name: "perform_market_checkin"
+  value: "true"
+}
+setting {
+  name: "photos:enable_backup_promo"
+  value: "false"
+}
+setting {
+  name: "photos:enable_device_management_promo"
+  value: "false"
+}
+setting {
+  name: "photos:short_onboarding"
+  value: "Default"
+}
+setting {
+  name: "play.playlog_enabled_sources"
+  value: "BOOKS"
+}
+setting {
+  name: "playconsole.are_android_metrics_crashes_enabled"
+  value: "true"
+}
+setting {
+  name: "playconsole.enable_ab_experiment_notifications_echidna"
+  value: "3"
+}
+setting {
+  name: "playconsole.enable_app_list_search"
+  value: "true"
+}
+setting {
+  name: "playconsole.enable_background_sync"
+  value: "false"
+}
+setting {
+  name: "playconsole.enable_canary_fraction_increase"
+  value: "true"
+}
+setting {
+  name: "playconsole.enable_canary_halt_resume"
+  value: "true"
+}
+setting {
+  name: "playconsole.enable_custom_date_picker"
+  value: "3"
+}
+setting {
+  name: "playconsole.enable_google_mobile_help"
+  value: "true"
+}
+setting {
+  name: "playconsole.enable_guns_notifications"
+  value: "true"
+}
+setting {
+  name: "playconsole.enable_guns_review_notifications"
+  value: "true"
+}
+setting {
+  name: "playconsole.enable_hourly_installs_only"
+  value: "2"
+}
+setting {
+  name: "playconsole.enable_lifetime_stats"
+  value: "3"
+}
+setting {
+  name: "playconsole.enable_listing_experiments"
+  value: "false"
+}
+setting {
+  name: "playconsole.enable_metered_background_sync"
+  value: "false"
+}
+setting {
+  name: "playconsole.enable_new_review_notifications"
+  value: "true"
+}
+setting {
+  name: "playconsole.enable_order_management"
+  value: "3"
+}
+setting {
+  name: "playconsole.enable_realtime_installs"
+  value: "false"
+}
+setting {
+  name: "playconsole.enable_revenue_card"
+  value: "true"
+}
+setting {
+  name: "playconsole.enable_review_sharing"
+  value: "true"
+}
+setting {
+  name: "playconsole.enable_split_diagnostic"
+  value: "3"
+}
+setting {
+  name: "playconsole.is_feature_analytics_enabled"
+  value: "3"
+}
+setting {
+  name: "playconsole.killswitch_kill_apk_versions_before"
+  value: "900019819"
+}
+setting {
+  name: "playconsole.killswitch_warn_apk_versions_before"
+  value: "900019819"
+}
+setting {
+  name: "playconsole.metrics_refurb"
+  value: "3"
+}
+setting {
+  name: "playconsole.release_tracks"
+  value: "3"
+}
+setting {
+  name: "playconsole.selectable_data_points"
+  value: "3"
+}
+setting {
+  name: "playconsole.stats_diff"
+  value: "3"
+}
+setting {
+  name: "qsb:has_external_dasher_account"
+  value: "false"
+}
+setting {
+  name: "search_allow_voice_search_hints"
+  value: "false"
+}
+setting {
+  name: "search_voice_app_install_uri"
+  value: "market://search?q=pname:com.google.android.voicesearch"
+}
+setting {
+  name: "secure:ssl_session_cache"
+  value: "file"
+}
+setting {
+  name: "settings_contributors_pretty_url"
+  value: "https://www.google.com/mobile/android/basic/phone-contributors.html"
+}
+setting {
+  name: "settings_contributors_url"
+  value: "https://www.google.com/mobile/android/basic/phone-contributors.html"
+}
+setting {
+  name: "settings_tos_pretty_url"
+  value: "https://www.google.com/mobile/android/basic/phone-legal.html"
+}
+setting {
+  name: "settings_tos_url"
+  value: "https://www.google.com/mobile/android/basic/phone-legal.html"
+}
+setting {
+  name: "society:flogger_enabled"
+  value: "true"
+}
+setting {
+  name: "society:min_logging_level"
+  value: "900"
+}
+setting {
+  name: "ssl_session_cache"
+  value: "file"
+}
+setting {
+  name: "storagemanagergoogle:photos_deletion_enabled"
+  value: "true"
+}
+setting {
+  name: "tachyon_audio_diagnostic_duration_secs"
+  value: "15"
+}
+setting {
+  name: "tachyon_call_rating_policy_call_duration_secs"
+  value: "15"
+}
+setting {
+  name: "tachyon_call_rating_policy_min_interval_secs"
+  value: "86400"
+}
+setting {
+  name: "tachyon_clearcut_logging_qos_high"
+  value: "false"
+}
+setting {
+  name: "tachyon_disable_cronet"
+  value: "true"
+}
+setting {
+  name: "tachyon_disable_quic"
+  value: "true"
+}
+setting {
+  name: "tachyon_max_out_nofx_video"
+  value: "640x480x30"
+}
+setting {
+  name: "tachyon_phone_number_whitelist_prefix"
+  value: "+199999"
+}
+setting {
+  name: "tachyon_platform_agc_disabled"
+  value: "true"
+}
+setting {
+  name: "tachyon_primes_track_crash"
+  value: "true"
+}
+setting {
+  name: "tachyon_primes_track_memory"
+  value: "true"
+}
+setting {
+  name: "tachyon_primes_track_network"
+  value: "true"
+}
+setting {
+  name: "tachyon_primes_track_package"
+  value: "true"
+}
+setting {
+  name: "tachyon_primes_track_timer"
+  value: "true"
+}
+setting {
+  name: "tachyon_silent_feedback_throttle_rate"
+  value: "1.0"
+}
+setting {
+  name: "tachyon_stats_report_interval_millis"
+  value: "10000"
+}
+setting {
+  name: "tvlauncher:blacklisted_app_packages"
+  value: ""
+}
+setting {
+  name: "tvlauncher:blacklisted_from_removal"
+  value: "com.netflix.ninja,com.google.android.videos,com.google.android.music"
+}
+setting {
+  name: "tvlauncher:blacklisted_from_watchlist"
+  value: "com.netflix.ninja"
+}
+setting {
+  name: "tvlauncher:notifications_whitelisted_packages"
+  value: "android,com.android.shell,com.google.android.katniss,com.google.android.permissioncontroller,com.google.android.tv.remote.service,com.google.android.tvlauncher,com.google.android.tvrecommendations,com.android.vending,com.android.traceur,com.google.android.apps.nbu.smartconnect.tv"
+}
+setting {
+  name: "tvrecommendations:connectivity_listener_disconnect_update_delay"
+  value: "30"
+}
+setting {
+  name: "tvrecommendations:connectivity_listener_start_delay"
+  value: "30"
+}
+setting {
+  name: "uncertified_status"
+  value: "1"
+}
+setting {
+  name: "update_clearcut_log_enabled_event_types"
+  value: "1,2,3,5,6,7,10,11"
+}
+setting {
+  name: "update_clearcut_log_enabled_ui_event_codes"
+  value: "1,2,8,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,28"
+}
+setting {
+  name: "update_description"
+  value: "<p> Software <strong><u>4.A.0019.1</u></strong> is available for your Fairphone 3 and Fairphone 3+.</p> \n<br>\n<p> This update also includes: <br> - Security patch level: 5th of December, 2022 </p>\n<br>\n<p> Note that it may take some time for the update process to complete. It will not be possible to use your device during this time. This includes not being able to make emergency calls. <p> Please note that data charges may apply."
+}
+setting {
+  name: "update_download_min_cache_space"
+  value: "0"
+}
+setting {
+  name: "update_download_min_data_space"
+  value: "0"
+}
+setting {
+  name: "update_download_pause_resume_by_service_allowed"
+  value: "false"
+}
+setting {
+  name: "update_download_prefer_data"
+  value: "0"
+}
+setting {
+  name: "update_download_rate_limits"
+  value: "0"
+}
+setting {
+  name: "update_download_redownload_retry_limit"
+  value: "3"
+}
+setting {
+  name: "update_experiment_id"
+  value: "44306818"
+}
+setting {
+  name: "update_install_failure_message"
+  value: "The software update failed to complete. Please check your battery charging (50% or above is required) and your data coverage."
+}
+setting {
+  name: "update_install_success_message"
+  value: "The software has been successfully updated."
+}
+setting {
+  name: "update_installation_auto_reboot_device_encryption_types"
+  value: "unencrypted,encrypted,unsupported"
+}
+setting {
+  name: "update_installation_install_tonight_window"
+  value: "0200-0400"
+}
+setting {
+  name: "update_mobile_network_delay"
+  value: "315360000"
+}
+setting {
+  name: "update_notify_scheduled_delay"
+  value: "0"
+}
+setting {
+  name: "update_notify_security_level_delay"
+  value: "0"
+}
+setting {
+  name: "update_notify_wifi_disconnected_delay"
+  value: "0"
+}
+setting {
+  name: "update_ota_property_files"
+  value: "payload_metadata.bin:1373:122802,payload.bin:1373:1342392603,payload_properties.txt:1342394034:156,care_map.pb:671:655,metadata:69:555"
+}
+setting {
+  name: "update_pause_resume_by_service_allowed"
+  value: "false"
+}
+setting {
+  name: "update_size"
+  value: "1280.2 MB"
+}
+setting {
+  name: "update_size_value"
+  value: "1342397164"
+}
+setting {
+  name: "update_status_log_max_delay_sec"
+  value: "129600"
+}
+setting {
+  name: "update_status_log_min_delay_sec"
+  value: "86400"
+}
+setting {
+  name: "update_streaming_property_files"
+  value: "payload.bin:1373:1342392603,payload_properties.txt:1342394034:156,care_map.pb:671:655,metadata:69:555"
+}
+setting {
+  name: "update_title"
+  value: "Fairphone 3/3+ Android 11 (4.A.0019.1) Update"
+}
+setting {
+  name: "update_token"
+  value: "AJeBEByuSxX5zwKnrCAf54LeL6ULmzTPuBLXbwtqkJyWahQRjX-kywtjm-AKgCXbXputBthm-4ItR64N1dHEACMSfTDkTuSa0g"
+}
+setting {
+  name: "update_ui_notify_approval_strategy"
+  value: "1,43200000"
+}
+setting {
+  name: "update_ui_notify_device_not_idle_strategy"
+  value: "1,43200000"
+}
+setting {
+  name: "update_ui_notify_insufficient_space_strategy"
+  value: "1,43200000"
+}
+setting {
+  name: "update_ui_notify_low_battery_strategy"
+  value: "1,43200000"
+}
+setting {
+  name: "update_ui_notify_scheduled_strategy"
+  value: "1,43200000"
+}
+setting {
+  name: "update_ui_notify_wifi_disconnected_strategy"
+  value: "1,43200000"
+}
+setting {
+  name: "update_urgency"
+  value: "2"
+}
+setting {
+  name: "update_url"
+  value: "https://android.googleapis.com/packages/ota-api/package/11587f67482200916065dcd7bf7687b72fe911da.zip"
+}
+setting {
+  name: "update_zero_rate_apn_capability"
+  value: ""
+}
+setting {
+  name: "url:block_crash_reports"
+  value: "http://android.clients.google.com/crash block"
+}
+setting {
+  name: "url:bookmarks_sync_https_proxy"
+  value: "https://clients4.google.com/chrome-sync rewrite https://android.clients.google.com/proxy/bookmarks"
+}
+setting {
+  name: "url:calendar_sync_http_proxy"
+  value: "http://www.google.com/calendar rewrite https://android.clients.google.com/proxy/calendar"
+}
+setting {
+  name: "url:calendar_sync_http_proxy_gdata"
+  value: "http://www.google.com/calendar/feeds rewrite https://android.clients.google.com/proxy/calendar2"
+}
+setting {
+  name: "url:calendar_sync_https_proxy"
+  value: "https://www.google.com/calendar rewrite https://android.clients.google.com/proxy/calendar"
+}
+setting {
+  name: "url:calendar_sync_https_proxy_gdata"
+  value: "https://www.google.com/calendar/feeds rewrite https://android.clients.google.com/proxy/calendar2"
+}
+setting {
+  name: "url:contacts_sync_http_proxy"
+  value: "http://www.google.com/m8/feeds rewrite https://android.clients.google.com/proxy/contacts"
+}
+setting {
+  name: "url:contacts_sync_https_proxy"
+  value: "https://www.google.com/m8/feeds rewrite https://android.clients.google.com/proxy/contacts"
+}
+setting {
+  name: "url:gmail_sync_http_proxy"
+  value: "http://mail.google.com rewrite http://android.clients.google.com/proxy/gmail"
+}
+setting {
+  name: "url:gmail_sync_https_proxy"
+  value: "https://mail.google.com rewrite https://android.clients.google.com/proxy/gmail"
+}
+setting {
+  name: "url:google_location_server"
+  value: "http://www.google.com/loc/m/api rewrite https://www.google.com/loc/m/api"
+}
+setting {
+  name: "url:guc_0_url"
+  value: "http://lh0.googleusercontent.com/ rewrite https://lh0.googleusercontent.com/"
+}
+setting {
+  name: "url:guc_1_url"
+  value: "http://lh1.googleusercontent.com/ rewrite https://lh1.googleusercontent.com/"
+}
+setting {
+  name: "url:guc_2_url"
+  value: "http://lh2.googleusercontent.com/ rewrite https://lh2.googleusercontent.com/"
+}
+setting {
+  name: "url:guc_3_url"
+  value: "http://lh3.googleusercontent.com/ rewrite https://lh3.googleusercontent.com/"
+}
+setting {
+  name: "url:guc_4_url"
+  value: "http://lh4.googleusercontent.com/ rewrite https://lh4.googleusercontent.com/"
+}
+setting {
+  name: "url:guc_5_url"
+  value: "http://lh5.googleusercontent.com/ rewrite https://lh5.googleusercontent.com/"
+}
+setting {
+  name: "url:guc_6_url"
+  value: "http://lh6.googleusercontent.com/ rewrite https://lh6.googleusercontent.com/"
+}
+setting {
+  name: "url:guc_7_url"
+  value: "http://lh7.googleusercontent.com/ rewrite https://lh7.googleusercontent.com/"
+}
+setting {
+  name: "url:guc_8_url"
+  value: "http://lh8.googleusercontent.com/ rewrite https://lh8.googleusercontent.com/"
+}
+setting {
+  name: "url:guc_9_url"
+  value: "http://lh9.googleusercontent.com/ rewrite https://lh9.googleusercontent.com/"
+}
+setting {
+  name: "url:play.playlog_log"
+  value: "https://android.clients.google.com/play/log rewrite https://play.googleapis.com/log"
+}
+setting {
+  name: "url:redirect_youtube_from_sandbox_ytbs"
+  value: "http://jmt17.google.com/proxy/ytbs rewrite http://android.clients.google.com/proxy/ytbs"
+}
+setting {
+  name: "url:redirect_youtube_from_sandbox_ytbt"
+  value: "http://jmt17.google.com/proxy/ytbt rewrite http://android.clients.google.com/proxy/ytbt"
+}
+setting {
+  name: "url:vending_machine_billing_ssl_url"
+  value: "https://android.clients.google.com/vending/billing/ rewrite https://android.clients.google.com/market/billing/"
+}
+setting {
+  name: "url:vending_machine_efe_url"
+  value: "https://android_efe.clients.google.com/vending/api/efe rewrite https://android.clients.google.com/market/efe/"
+}
+setting {
+  name: "url:vending_machine_ssl_url"
+  value: "https://android.clients.google.com/vending/ rewrite https://android.clients.google.com/market/"
+}
+setting {
+  name: "url:vending_machine_url"
+  value: "http://android.clients.google.com/vending/ rewrite http://android.clients.google.com/market/"
+}
+setting {
+  name: "url:verify_apps_url_rewrite"
+  value: "https://safebrowsing.google.com/safebrowsing/clientreport rewrite https://android-safebrowsing.google.com/safebrowsing/clientreport"
+}
+setting {
+  name: "url:videos_lic"
+  value: "https://www.youtube.com/api/license/wv/fetch rewrite https://play.google.com/video/license/GetEMMs.cgi"
+}
+setting {
+  name: "url:videos_search_suggestion_url"
+  value: "https://market.android.com/suggest/ rewrite https://play.google.com/video/avi/suggest/"
+}
+setting {
+  name: "use_msisdn_token"
+  value: "false"
+}
+setting {
+  name: "vending_carrier_cred_buf_ms"
+  value: "1800000"
+}
+setting {
+  name: "vending_carrier_ref_freq_ms"
+  value: "1209600000"
+}
+setting {
+  name: "vending_dcb_poll_timeout_ms"
+  value: "20000"
+}
+setting {
+  name: "vending_hide_ad_prefs"
+  value: "false"
+}
+setting {
+  name: "vending_hide_content_rating"
+  value: "false"
+}
+setting {
+  name: "vending_hide_warning_message"
+  value: "true"
+}
+setting {
+  name: "vending_require_sim_for_purchase"
+  value: "true"
+}
+setting {
+  name: "vending_show_similar_tab_in_app_info_page"
+  value: "1"
+}
+setting {
+  name: "vending_support_url"
+  value: "https://support.google.com/androidmarket/"
+}
+setting {
+  name: "vending_sync_frequency_ms"
+  value: "172800000"
+}
+setting {
+  name: "vending_tos_url"
+  value: "https://www.google.com/intl/%locale%/mobile/android/market-terms.html"
+}
+setting {
+  name: "vending_tos_version"
+  value: "1.0.0"
+}
+setting {
+  name: "vending_use_checkout_qa_service"
+  value: "false"
+}
+setting {
+  name: "videos:allow_pip_mode"
+  value: "true"
+}
+setting {
+  name: "videos:analytics_enabled"
+  value: "false"
+}
+setting {
+  name: "videos:atv_choosies_enabled_inside_out"
+  value: "true"
+}
+setting {
+  name: "videos:atv_choosies_redemption_blacklisted"
+  value: "XBR-100Z9D,XBR-75Z9D,XBR-65Z9D,XBR-75X940D,XBR-65X930D,XBR-65X935D,XBR-65X937D,XBR-55X930D,XBR-85X850D,XBR-85X855D,XBR-85X857D,XBR-75X850D,XBR-75X855D,XBR-75X857D,XBR-65X850D,XBR-65X855D,XBR-65X857D,XBR-55X850D,XBR-55X855D,XBR-55X857D,XBR-49X830D,XBR-49X835D,XBR-49X837D,XBR-43X830D,XBR-49X800D,XBR-43X800D,XBR-43X805D,XBR-65X750D,XBR-65X759D,XBR-65X755D,XBR-65X757D,XBR-55X700D,XBR-55X709D,XBR-55X705D,KD-55X7005D,XBR-55X707D,XBR-49X700D,XBR-49X709D,XBR-49X705D,KD-49X7005D,XBR-49X707D,KD-100ZD9,KD-75ZD9,KD-65ZD9,KD-75XD9405,KD-65XD9305,KD-55XD9305,KD-65SD8505,KD-55SD8505,FW-85XD8501,KD-85XD8505,FW-75XD8501,KD-75XD8505,FW-65XD8501,KD-65XD8505,KD-65XD8577,KD-65XD8599,FW-55XD8501,KD-55XD8505,KD-55XD8577,KD-55XD8588,KD-55XD8599,KD-49XD8305,KD-43XD8305,KD-55XD8005,FW-49XD8001,KD-49XD8005,KD-49XD8077,KD-49XD8088,KD-49XD8099,FW-43XD8001,KD-43XD8005,KD-43XD8077,KD-43XD8088,KD-43XD8099,KD-55SD8005,KD-50SD8005,KD-65XD7505,KD-65XD7504,KD-55XD7005,KD-55XD7004,KD-49XD7005,KD-49XD7004,KD-100Z9D,KJ-100Z9D,KD-75Z9D,KJ-75Z9D,KD-65Z9D,KJ-65Z9D,KD-75X9400D,KJ-75X9400D,KD-65X9300D,KJ-65X9300D,KD-55X9300D,KJ-55X9300D,KD-65S8500D,KD-55S8500D,KD-85X8500D,KD-75X8500D,KD-65X8500D,KD-65X8566D,KJ-65X8500D,KD-55X8500D,KD-55X8505D,FW-55X8501D,KD-55X8566D,KJ-55X8500D,KJ-49X8300D,KJ-43X8300D,KD-49X8000D,KD-49X8066D,KJ-49X8000D,KD-43X8000D,KJ-43X8000D,KD-55S8000D,KD-50S8000D,KD-65X7500D,KD-65X7566D,KD-55X7000D,FW-55X7001D,KD-55X7066D,KJ-55X7000D,KD-49X7000D,FW-49X7001D,KD-49X7066D,KJ-49X7000D,XBR-55A8G,KD-55A8G,KJ-55A8G,KD-55AG8,XBR-65A8G,KD-65A8G,KJ-65A8G,KD-65AG8,XBR-43X800G,XBR-49X800G,XBR-49X805G,XBR-49X807G,XBR-55X800G,XBR-55X805G,XBR-55X807G,XBR-65X800G,XBR-65X805G,XBR-65X807G,XBR-75X800G,XBR-75X805G,XBR-75X807G,KD-43X8000G,KD-49X8000G,KD-55X8000G,KD-65X8000G,KD-75X8000G,KD-43XG8096,KD-49XG8096,KD-55XG8096,KD-65XG8096,KD-75XG8096,KJ-43X8000G,KJ-49X8000G,KJ-55X8000G,KJ-65X8000G,KD-55X8077G,KD-65X8077G,KD-43XG8196,KD-49XG8196,KD-55XG8196,KD-65XG8196"
+}
+setting {
+  name: "videos:bundle_details_page_enabled_vs"
+  value: "true"
+}
+setting {
+  name: "videos:cast_icon_management_enabled"
+  value: "false"
+}
+setting {
+  name: "videos:cast_v2_enabled"
+  value: "true"
+}
+setting {
+  name: "videos:coupon_welcome_enabled"
+  value: "false"
+}
+setting {
+  name: "videos:enable_4k_upgrade_notifications_vs"
+  value: "true"
+}
+setting {
+  name: "videos:enable_ceres_force_on_vs"
+  value: "41400220+:true"
+}
+setting {
+  name: "videos:enable_details_discount_annotation_force_on_vs"
+  value: "true"
+}
+setting {
+  name: "videos:enable_details_similar_assets_pagination_force_on_vs"
+  value: "true"
+}
+setting {
+  name: "videos:enable_k2_force_on_vs"
+  value: "41400220+:true"
+}
+setting {
+  name: "videos:enable_nur_discovery_guide_internal_force_on_vs"
+  value: "41400220+:true"
+}
+setting {
+  name: "videos:enable_nur_discovery_search_internal_force_on_vs"
+  value: "41400220+:true"
+}
+setting {
+  name: "videos:enable_nur_manifest_internal_force_on_vs"
+  value: "41200070+:true"
+}
+setting {
+  name: "videos:enable_nur_metadata_internal_force_on_vs"
+  value: "41400220+:true"
+}
+setting {
+  name: "videos:enable_playable_sequence_internal_force_on_vs"
+  value: "41200070+:true"
+}
+setting {
+  name: "videos:enable_replay_playback_vs"
+  value: "41400220+:true"
+}
+setting {
+  name: "videos:enable_replay_polish_force_on_vs"
+  value: "true"
+}
+setting {
+  name: "videos:exo_v2_abr_block_fixed_track_selection_bandwidth"
+  value: "true"
+}
+setting {
+  name: "videos:exo_v2_abr_enable_parallel_adaptation_vs"
+  value: "false"
+}
+setting {
+  name: "videos:exo_v2_bandwidth_fraction"
+  value: "0.70"
+}
+setting {
+  name: "videos:exo_v2_buffer_chunk_count_n"
+  value: "585"
+}
+setting {
+  name: "videos:exo_v2_high_watermark_ms"
+  value: "2147483647"
+}
+setting {
+  name: "videos:exo_v2_init_bitrate_algo"
+  value: "2"
+}
+setting {
+  name: "videos:exo_v2_low_watermark_ms"
+  value: "2147483647"
+}
+setting {
+  name: "videos:exo_v2_prioritize_time_over_size_thresholds"
+  value: "false"
+}
+setting {
+  name: "videos:exo_v2_reset_bw_meter_on_network_type_change"
+  value: "true"
+}
+setting {
+  name: "videos:exo_v2_use_default_load_control"
+  value: "true"
+}
+setting {
+  name: "videos:exo_v2_use_global_bw_meter"
+  value: "true"
+}
+setting {
+  name: "videos:exo_v2_use_qoe_listener_vs"
+  value: "41400000+:true"
+}
+setting {
+  name: "videos:exo_v2_use_video_track_selection_x"
+  value: "true"
+}
+setting {
+  name: "videos:exoplayer_v2_enabled_tron"
+  value: "true"
+}
+setting {
+  name: "videos:fallbackDrmErrorCodes"
+  value: "44,49,108"
+}
+setting {
+  name: "videos:family_sharing_enabled"
+  value: "true"
+}
+setting {
+  name: "videos:free_movie_welcome_enabled"
+  value: "true"
+}
+setting {
+  name: "videos:guide_distributors_countries_vs"
+  value: "US;41400000-:_"
+}
+setting {
+  name: "videos:horizontal_scrolling_enabled"
+  value: "true"
+}
+setting {
+  name: "videos:how_to_play_support_uri"
+  value: "https://support.google.com/googleplay/?p=ways_to_watch"
+}
+setting {
+  name: "videos:in_app_drm_player_streaming_height_cap"
+  value: "719"
+}
+setting {
+  name: "videos:knowledge_enabled_phones"
+  value: "false"
+}
+setting {
+  name: "videos:knowledge_enabled_tablets"
+  value: "false"
+}
+setting {
+  name: "videos:latest_version"
+  value: "31208000"
+}
+setting {
+  name: "videos:library_management_enabled"
+  value: "true"
+}
+setting {
+  name: "videos:minimum_version"
+  value: "26000"
+}
+setting {
+  name: "videos:movie_vertical_countries"
+  value: "AU,BE,BR,CA,CH,FR,DE,IN,IT,MX,JP,RU,KR,ES,GB,US,BW,TZ,ZW,HK,NP,LK,AG,BZ,JM,TT,FJ,NZ,PG,AO,AW,BJ,BO,BF,KH,CV,CL,CO,CR,CI,DK,DO,EC,SV,FI,GA,GT,HT,HN,LU,ML,MU,NA,NL,NI,NE,NO,PA,PY,PE,PH,PT,RW,SN,SE,TG,UG,UY,VE,ZM,CZ,GR,TH,PL,AR,AL,AM,AZ,BY,HR,EE,KZ,KG,LA,LV,LT,MD,SK,TJ,TM,UZ,IE,AT,BA,CY,HU,IS,MK,MT,SI,TW,UA,SG,ID,MY,ZA,TR,SA,AU,VN,KW,QA,EG,LB,OM,BH,JO"
+}
+setting {
+  name: "videos:movies_vertical_enabled"
+  value: "true"
+}
+setting {
+  name: "videos:multi_audio_r"
+  value: "true"
+}
+setting {
+  name: "videos:oauth_token_for_cast_enabled"
+  value: "true"
+}
+setting {
+  name: "videos:onboarding_feedback"
+  value: "false"
+}
+setting {
+  name: "videos:play_analytics_server"
+  value: "https://play.googleapis.com/play/log"
+}
+setting {
+  name: "videos:prism_audio_preferences_enabled_vs"
+  value: "true"
+}
+setting {
+  name: "videos:prompt_unpin_for_remote_play_of_pinned_rental"
+  value: "false"
+}
+setting {
+  name: "videos:qoe_offline_logging_enabled"
+  value: "true"
+}
+setting {
+  name: "videos:replay_disabled_vs"
+  value: "false"
+}
+setting {
+  name: "videos:show_vertical_countries"
+  value: "US,GB,JP,AU,CA,DE,FR,AT,CH"
+}
+setting {
+  name: "videos:shows_vertical_enabled"
+  value: "true"
+}
+setting {
+  name: "videos:use_new_easy_auth_strings"
+  value: "true"
+}
+setting {
+  name: "videos:vr_countries"
+  value: "US,GB,AU,CA,DE,KR,IN,IT,JP,FR,ES"
+}
+setting {
+  name: "voice_search:advanced_features_enabled"
+  value: "1"
+}
+setting {
+  name: "voice_search:alternate_backoff_languages"
+  value: "af:af-ZA af-NA:af-ZA ar:ar-EG ar-BH:ar-QA ar-LY:ar-EG ar-OM:ar-AE ar-PS:ar-IL bg:bg-BG ca:ca-ES ca-AD:ca-ES cs:cs-CZ da:da-DK de:de-DE de-AT:de-DE de-CH:de-DE de-LI:de-DE el:el-GR en:en-001 en-IE:en-GB en-SG:en-001 en-UK:en-GB es:es-ES fa:fa-IR fi:fi-FI fil:fil-PH fr:fr-FR fr-BE:fr-FR fr-CA:fr-FR fr-CH:fr-FR gl:gl-ES he:iw-IL he-IL:iw-IL hi:hi-IN hr:hr-HR hr-BA:hr-HR hu:hu-HU id:id-ID in:id-ID in-ID:id-ID is:is-IS it:it-IT it-CH:it-IT iw:iw-IL ja:ja-JP ko:ko-KR lt:lt-LT ms:ms-MY ms-BN:ms-MY ms-SG:ms-MY nb:nb-NO nl:nl-NL nl-BE:nl-NL no:nb-NO no-NO:nb-NO pl:pl-PL pt:pt-BR pt-AO:pt-BR ro:ro-RO ro-MD:ro-RO ru:ru-RU ru-UA:ru-RU sk:sk-SK sl:sl-SI sr:sr-Cyrl-RS sr-BA:sr-Cyrl-RS sr-ME:sr-Cyrl-RS sr-RS:sr-Cyrl-RS sr-XK:sr-Cyrl-RS sv:sv-SE sv-FI:sv-SE th:th-TH tl:fil-PH tl-PH:fil-PH tr:tr-TR uk:uk-UA vi:vi-VN zh:cmn-Hans-CN zh-CN:cmn-Hans-CN zh-HK:yue-Hant-HK zh-MO:yue-Hant-HK zh-SG:cmn-Hans-CN zh-TW:cmn-Hant-TW zu:zu-ZA"
+}
+setting {
+  name: "voice_search:de_DE_action_go_to"
+  value: "Anzeigen"
+}
+setting {
+  name: "voice_search:de_DE_action_navigate_to"
+  value: "Ansteuern"
+}
+setting {
+  name: "voice_search:de_DE_hint_go_to"
+  value: "wikipedia <b>anzeigen</b>"
+}
+setting {
+  name: "voice_search:de_DE_hint_navigate_to"
+  value: "brandenburger tor <b>ansteuern</b>"
+}
+setting {
+  name: "voice_search:de_DE_hint_send_sms"
+  value: "<b>sms senden</b> an john smith"
+}
+setting {
+  name: "voice_search:extra_total_result_timeout_ms"
+  value: "20000"
+}
+setting {
+  name: "voice_search:help_video_url"
+  value: "http://www.youtube.com/watch?v=tPPcTN5sdX4"
+}
+setting {
+  name: "voice_search:it_IT_hint_go_to"
+  value: "<b>vai su</b> wikipedia</string>"
+}
+setting {
+  name: "voice_search:it_IT_hint_send_sms"
+  value: "<b>invia sms</b> a giulia bianchi"
+}
+setting {
+  name: "voice_search:it_IT_slot_send_sms_message"
+  value: "messaggio"
+}
+setting {
+  name: "voice_search:mobile_privacy_url"
+  value: "https://www.google.com/privacy.html"
+}
+setting {
+  name: "voice_search:personalization_countries"
+  value: ""
+}
+setting {
+  name: "voice_search:personalization_v2_countries"
+  value: "310 311 312 313 314 315 316"
+}
+setting {
+  name: "voice_search:supported_actions"
+  value: "en-US:0,1,2,3,4 en-CA:0,1,2,3,4 en-GB:0,1,2,3,4 en-AU:0,1,2,3,4 en-NZ:0,1,2,3,4 en-IN:0,1,2,3,4 en-001:0,1,2,3,4 af-ZA: ar-DZ: ar-EG: ar-IL: ar-JO: ar-KW: ar-LB: ar-MA: ar-QA: ar-SA: ar-TN: ar-AE: bg-BG: ca-ES: cmn-Hans-CN: cmn-Hans-HK: cmn-Hant-TW: yue-Hant-HK: hr-BA: hr-HR: cs-CZ: da-DK: nl-NL: en-ZA: fi-FI: fil-PH: tl-PH: fr-FR: gl-ES: de-DE: el-GR: iw-IL: hi-IN: hu-HU: is-IS: id-ID: zu-ZA: it-IT: ja-JP: ko-KR: lt-LT: ms-MY: nb-NO: fa-IR: pl-PL: pt-BR: pt-PT: ro-RO: ru-RU: sr-Cyrl-RS: sk-SK: sl-SI: es-AR: es-BO: es-CL: es-CO: es-CR: es-DO: es-EC: es-SV: es-GT: es-HN: es-MX: es-NI: es-PA: es-PY: es-PE: es-PR: es-ES: es-US: es-UY: es-VE: sv-SE: th-TH: tr-TR: uk-UA: vi-VN:"
+}
+setting {
+  name: "voice_search:supported_actions_new_numbering_scheme"
+  value: "en-US:14,18,2,12,13,15,4,17,1,6,3 en-CA:2,3,4,1 en-GB:14,2,12,4,17,1,3 en-AU:2,3,4,1 en-NZ:2,3,4,1 en-IN:2,3,4,1 en-001:2,3,4,1 de-DE:14,2,12,4,17,1,3 es-ES:14,2,12,4,17,1,3 fr-FR:14,2,12,4,17,1,3 it-IT:14,2,12,4,17,1,3 af-ZA: ar-DZ: ar-EG: ar-IL: ar-JO: ar-KW: ar-LB: ar-MA: ar-QA: ar-SA: ar-TN: ar-AE: bg-BG: ca-ES: cmn-Hans-CN: cmn-Hans-HK: cmn-Hant-TW: yue-Hant-HK: hr-BA: hr-HR: cs-CZ: da-DK: nl-NL: en-ZA: fi-FI: fil-PH: tl-PH: gl-ES: el-GR: iw-IL: hi-IN: hu-HU: is-IS: id-ID: zu-ZA: ja-JP: ko-KR: lt-LT: ms-MY: nb-NO: fa-IR: pl-PL: pt-BR: pt-PT: ro-RO: ru-RU: sr-Cyrl-RS: sk-SK: sl-SI: es-AR: es-BO: es-CL: es-CO: es-CR: es-DO: es-EC: es-SV: es-GT: es-HN: es-MX: es-NI: es-PA: es-PY: es-PE: es-PR: es-US: es-UY: es-VE: sv-SE: th-TH: tr-TR: uk-UA: vi-VN:"
+}
+setting {
+  name: "voice_search:supported_languages"
+  value: "af-ZA ar-DZ ar-EG ar-IL ar-JO ar-KW ar-LB ar-MA ar-QA ar-SA ar-TN ar-AE bg-BG ca-ES cmn-Hans-CN cmn-Hans-HK cmn-Hant-TW yue-Hant-HK hr-HR cs-CZ da-DK nl-NL en-AU en-CA en-IN en-NZ en-ZA en-GB en-US en-001 fil-PH fi-FI fr-FR gl-ES de-DE el-GR iw-IL hi-IN hu-HU is-IS id-ID zu-ZA it-IT ja-JP ko-KR lt-LT ms-MY nb-NO fa-IR pl-PL pt-BR pt-PT ro-RO ru-RU sr-Cyrl-RS sk-SK sl-SI es-AR es-BO es-CL es-CO es-CR es-DO es-EC es-SV es-GT es-HN es-MX es-NI es-PA es-PY es-PE es-PR es-ES es-US es-UY es-VE sv-SE th-TH tr-TR uk-UA vi-VN Euskara"
+}
+setting {
+  name: "voice_search:unsupported_action_market_url_set_alarm"
+  value: "http://www.google.com/support/mobile/bin/answer.py?answer=187559"
+}
+setting {
+  name: "wallet.check_form_edit_text_should_hide_label_for_showing_layout_cutout"
+  value: "true"
+}
+setting {
+  name: "wallet.clientlog.enable_fingerprint_auth_event"
+  value: "true"
+}
+setting {
+  name: "wallet.enable_alert_tooltip_dialog_gm2_style"
+  value: "true"
+}
+setting {
+  name: "wallet.enable_show_info_message_image_in_simple_form"
+  value: "true"
+}
+setting {
+  name: "wallet.populate_value_for_read_only_ui_fields"
+  value: "false"
+}
+setting {
+  name: "wallet.request_context_include_apn_v3"
+  value: "true"
+}
+setting {
+  name: "wallet.request_context_include_native_client_context_android_id"
+  value: "true"
+}
+setting {
+  name: "wallet.support_app_redirect_on_initialization"
+  value: "false"
+}
+setting {
+  name: "wallet.support_multi_sim_card"
+  value: "true"
+}
+setting {
+  name: "wear-dialer:primes_enable_timer_metric"
+  value: "true"
+}
+setting {
+  name: "wear-dialer:quick_reply"
+  value: "true"
+}
+setting {
+  name: "wear-dialer:spam_detection"
+  value: "false"
+}
+setting {
+  name: "work:oob_config_phonesky_dpc_installation"
+  value: "false"
+}
+setting {
+  name: "work:oob_config_skip_zero_touch_ui"
+  value: "true"
+}
+setting {
+  name: "youtube:allow_debug"
+  value: "true"
+}
+setting {
+  name: "youtube:analytics_sample_ratio"
+  value: "2000"
+}
+setting {
+  name: "youtube:companion_ad_enabled"
+  value: "true"
+}
+setting {
+  name: "youtube:csi_enabled"
+  value: "true"
+}
+setting {
+  name: "youtube:enable_distiller_comments"
+  value: "false"
+}
+setting {
+  name: "youtube:enable_distiller_comments_5_3"
+  value: "false"
+}
+setting {
+  name: "youtube:enable_innertube_browse_for_default_feed"
+  value: "true"
+}
+setting {
+  name: "youtube:enable_innertube_guide"
+  value: "false"
+}
+setting {
+  name: "youtube:enable_innertube_guide_5_2"
+  value: "true"
+}
+setting {
+  name: "youtube:enable_innertube_guide_5_3"
+  value: "false"
+}
+setting {
+  name: "youtube:enable_innertube_guide_5_3_b"
+  value: "true"
+}
+setting {
+  name: "youtube:enable_innertube_watch_next"
+  value: "false"
+}
+setting {
+  name: "youtube:enable_innertube_watch_next_5_3"
+  value: "false"
+}
+setting {
+  name: "youtube:enable_lact"
+  value: "true"
+}
+setting {
+  name: "youtube:enable_trending_logged_out_v3"
+  value: "true"
+}
+setting {
+  name: "youtube:enable_universal_search"
+  value: "false"
+}
+setting {
+  name: "youtube:enable_universal_search_5_3"
+  value: "false"
+}
+setting {
+  name: "youtube:enable_what_to_watch_v3"
+  value: "true"
+}
+setting {
+  name: "youtube:interaction_logging_enabled"
+  value: "true"
+}
+setting {
+  name: "youtube:is_bgol_enabled"
+  value: "false"
+}
+setting {
+  name: "youtube:is_bgol_enabled_5_3"
+  value: "false"
+}
+setting {
+  name: "youtube:is_pudl_enabled_without_resync"
+  value: "false"
+}
+setting {
+  name: "youtube:is_pudl_enabled_without_resync_5_3"
+  value: "false"
+}
+setting {
+  name: "youtube:kids:csi_enabled"
+  value: "true"
+}
+setting {
+  name: "youtube:main:*:*:csi_enabled"
+  value: "true"
+}
+setting {
+  name: "youtube:main:*:*:enable_lact"
+  value: "true"
+}
+setting {
+  name: "youtube:main:*:*:interaction_logging_enabled"
+  value: "true"
+}
+setting {
+  name: "youtube:main:*:*:is_bgol_enabled"
+  value: "false"
+}
+setting {
+  name: "youtube:main:cache_ms_param_millis"
+  value: "240000"
+}
+setting {
+  name: "youtube:main:csi_enabled"
+  value: "true"
+}
+setting {
+  name: "youtube:main:enable_lact"
+  value: "true"
+}
+setting {
+  name: "youtube:main:failsafe_clear_cache_dogfood"
+  value: "false"
+}
+setting {
+  name: "youtube:main:failsafe_clear_cache_dogfood_13_02"
+  value: "true"
+}
+setting {
+  name: "youtube:main:failsafe_clear_cache_release"
+  value: "false"
+}
+setting {
+  name: "youtube:main:failsafe_clear_cache_release_13_02"
+  value: "true"
+}
+setting {
+  name: "youtube:main:failsafe_enable_gms_device_compliance_check"
+  value: "true"
+}
+setting {
+  name: "youtube:main:failsafe_maxnumber_uncaught_exception"
+  value: "3"
+}
+setting {
+  name: "youtube:main:failsafe_maxnumber_unfinished_startup"
+  value: "-1"
+}
+setting {
+  name: "youtube:main:failsafe_maxnumbercrash"
+  value: "-1"
+}
+setting {
+  name: "youtube:main:failsafe_maxnumbercrash_12_15"
+  value: "-1"
+}
+setting {
+  name: "youtube:main:interaction_logging_enabled"
+  value: "true"
+}
+setting {
+  name: "youtube:main:is_bgol_enabled"
+  value: "false"
+}
+setting {
+  name: "youtube:min_app_version"
+  value: "101756000"
+}
+setting {
+  name: "youtube:offline_dispatch_maximum_errors"
+  value: "0"
+}
+setting {
+  name: "youtube:offline_http_report_cap_hours"
+  value: "17520"
+}
+setting {
+  name: "youtube:tv:*:*:enable_mdx_https_browser_channel"
+  value: "true"
+}
+setting {
+  name: "youtube:tv:*:*:interaction_logging_enabled"
+  value: "true"
+}
+setting {
+  name: "youtube:tv:*:*:target_app_version"
+  value: "10116000"
+}
+setting {
+  name: "youtube:tv:can_use_texture_surface"
+  value: "false"
+}
+setting {
+  name: "youtube:tv:enable_mdx_https_browser_channel"
+  value: "true"
+}
+setting {
+  name: "youtube:tv:interaction_logging_enabled"
+  value: "true"
+}
+setting {
+  name: "youtube:tv:target_app_version"
+  value: "10116000"
+}
+setting {
+  name: "youtube:vmap_via_get_ad_tags_enabled"
+  value: "true"
+}
+setting {
+  name: "youtube:vss_sampling_weight"
+  value: "10"
+}
+setting {
+  name: "youtube_use_proxy"
+  value: "true"
+}
+androidId: 3953170296797612226
+securityToken: 6663941256558574715
+settingsDiff: false

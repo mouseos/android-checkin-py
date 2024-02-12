@@ -5,6 +5,7 @@ import time
 import requests
 import gzip
 from io import BytesIO
+from pprint import pprint
 android_checkin_request= AndroidCheckinRequest()
 android_checkin_respoonse= AndroidCheckinResponse()
 gservices_setting = GservicesSetting()
@@ -14,11 +15,50 @@ android_event_proto = AndroidEventProto()
 android_statistic_proto = AndroidStatisticProto()
 android_intent_proto = AndroidIntentProto()
 device_configution_proto = DeviceConfigurationProto()
-
+'''
+message AndroidCheckinRequest {
+  optional string imei = 1;
+  optional int64 id = 2;
+  optional string digest = 3;
+  optional AndroidCheckinProto checkin = 4;
+  optional string desiredBuild = 5;
+  optional string locale = 6;
+  optional int64 loggingId = 7;
+  optional string marketCheckin = 8;
+  repeated string macAddr = 9;
+  optional string meid = 10;
+  repeated string accountCookie = 11;
+  optional string timeZone = 12;
+  optional fixed64 securityToken = 13;
+  optional int32 version = 14;
+  repeated string otaCert = 15;
+  optional string serialNumber = 16;
+  optional string esn = 17;
+  optional DeviceConfigurationProto deviceConfiguration = 18;
+  repeated string macAddrType = 19;
+  optional int32 fragment = 20;
+  optional string userName = 21;
+}
+'''
 # 値をセット
-android_checkin_request.id=0
-android_checkin_request.digest= "1-da39a3ee5e6b4b0d3255bfef95601890afd80709" 
-
+#android_checkin_request.id=0
+android_checkin_request.digest= "1-da39a3ee5e6b4b0d3255bfef95601890afd80709"  #値は何でもよい
+#android_checkin_request.locale=""
+#android_checkin_request.loggingId=0
+#android_checkin_request.marketCheckin=""
+#android_checkin_request.macAddr=[]
+#android_checkin_request.meid=""
+#android_checkin_request.accountCookie=[]
+#android_checkin_request.timeZone="America/New_York"
+#android_checkin_request.securityToken=0
+android_checkin_request.version=3 #2 or 3
+#android_checkin_request.otaCert.extend(["+eBjakVbKgvqGgpzlIx35lE6iiM="])
+#android_checkin_request.serialNumber=""
+#android_checkin_request.esn=""
+#android_checkin_request.deviceConfiguration=null
+#android_checkin_request.macAddrType=[]
+#android_checkin_request.fragment=0
+#android_checkin_request.userName=""
 '''
 message AndroidBuildProto {
   optional string id = 1;
@@ -40,19 +80,19 @@ message AndroidBuildProto {
 '''
 #AndroidBuildProtoの値をセット
 android_build_proto.id="Fairphone/FP3/FP3:9/8901.2.A.0105.20191217/12171325:user/release-keys"
-android_build_proto.product="qcom"
-android_build_proto.carrier="Fairphone"
-android_build_proto.radio=".TA.3.0.c1-00565-8953_GEN_PACK-1,.TA.3.0.c1-00565-8953_GEN_PACK-1"
-android_build_proto.bootloader="unknown"
-android_build_proto.client="android-uniscope"
-android_build_proto.timestamp=1576561122 
-android_build_proto.googleServices=19275037 
+#android_build_proto.product="qcom"
+#android_build_proto.carrier="Fairphone"
+#android_build_proto.radio=".TA.3.0.c1-00565-8953_GEN_PACK-1,.TA.3.0.c1-00565-8953_GEN_PACK-1"
+#android_build_proto.bootloader="unknown"
+#android_build_proto.client="android-uniscope"
+android_build_proto.timestamp=0 #元の値は1576561122だったがそれ以下の値でも動く
+#android_build_proto.googleServices=19275037 
 android_build_proto.device="FP3"
-android_build_proto.sdkVersion=28
-android_build_proto.model="FP3"
-android_build_proto.manufacturer="Fairphone"
-android_build_proto.buildProduct="FP3"
-android_build_proto.otaInstalled=False
+#android_build_proto.sdkVersion=28
+#android_build_proto.model="FP3"
+#android_build_proto.manufacturer="Fairphone"
+#android_build_proto.buildProduct="FP3"
+#android_build_proto.otaInstalled=False
 
 '''
 message AndroidCheckinProto {
@@ -70,7 +110,7 @@ message AndroidCheckinProto {
 }
 '''
 android_checkin_proto.build.MergeFrom(android_build_proto)
-android_checkin_proto.lastCheckinMsec=0
+#android_checkin_proto.lastCheckinMsec=0
 #android_checkin_proto.event.extend([])
 #android_checkin_proto.stat.extend([])
 #android_checkin_proto.requestedGroup.extend([])
@@ -78,8 +118,7 @@ android_checkin_proto.lastCheckinMsec=0
 #android_checkin_proto.simOperator=""
 #android_checkin_proto.roaming=""
 #android_checkin_proto.userNumber=0
-#19: "2019-12-05"を入れたいがなぜか19番がないので勝手に追加
-android_checkin_proto.securityPatch="2019-12-05"
+
 
 android_checkin_request.checkin.MergeFrom(android_checkin_proto)
 
@@ -100,7 +139,15 @@ try:
         # パースする
         response_proto = AndroidCheckinResponse()
         response_proto.ParseFromString(response.content)
-        print(response_proto)
+        for data in response_proto.setting:
+            if((data.name.decode('utf-8'))=="update_url"):
+                print("OTAアップデートファイル")
+                print("============================================================================================")
+                print("Build:"+android_build_proto.id)
+                print("URL:"+data.value.decode('utf-8'))
+        # ファイルに保存
+        with open('response.proto', 'w') as file:
+            file.write(str(response_proto))
     else:
         print(f"Check-in 失敗　status code {response.status_code}")
 except requests.RequestException as e:
