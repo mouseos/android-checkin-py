@@ -31,7 +31,7 @@ jobs:
           check-latest: true
           python-version: '3.x'
           cache: 'pip'
-          cache-dependency-path: /
+          cache-dependency-path: ./
 
       - name: Get URL
         run: python ./checkin.py ${{ inputs.fingerprint }} ${{ inputs.model }}
