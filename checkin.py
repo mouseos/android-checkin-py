@@ -1,12 +1,19 @@
 from checkin_pb2 import AndroidCheckinRequest,AndroidCheckinResponse,GservicesSetting
 from logs_pb2 import AndroidCheckinProto,AndroidBuildProto,AndroidEventProto,AndroidStatisticProto,AndroidIntentProto
 from config_pb2 import DeviceConfigurationProto
-import time
+import sys
 import requests
 import gzip
 from io import BytesIO
 from pprint import pprint
 from urllib3.exceptions import InsecureRequestWarning
+
+if not len(sys.argv) == 2:
+    print()
+    print("Use: python3 " + sys.argv[0] + " [ro.build.fingerprint] [ro.product.model]")
+    print()
+    sys.exit(1)
+
 def get_update_url(fingerprint,device):
     if(fingerprint=="" or device==""):
         print("引数を正しく入力してください。")
@@ -166,4 +173,6 @@ def get_update_url(fingerprint,device):
 
 #アップデートURLを取得
 #pprint(get_update_url("Fairphone/FP3/FP3:9/8901.2.A.0105.20191217/12171325:user/release-keys","FP3"))
-pprint(get_update_url("benesse/TAB-A05-BD/TAB-A05-BD:9/01.00.000/01.00.000:user/release-keys","TAB-A05-BD"))
+#pprint(get_update_url("benesse/TAB-A05-BD/TAB-A05-BD:9/01.00.000/01.00.000:user/release-keys","TAB-A05-BD"))
+
+pprint(get_update_url(sys.argv[1],sys.argv[2]))
