@@ -1,0 +1,42 @@
+name: Get OTA firmware
+on:
+  workflow_dispatch:
+    inputs:
+      fingerprint:
+        type: string
+        description: ro.build.fingerprint
+        required: true
+      model:
+        type: string
+        description: ro.product.model
+        required: true
+
+jobs:
+  get:
+    name: Get OTA firmware
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Show args
+        run: |
+          echo "fingerprint: ${{ inputs.fingerprint }}"
+          echo "model: ${{ inputs.model }}"
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        id: python
+        with:
+          check-latest: true
+          python-version: '3.x'
+          cache: 'pip'
+          cache-dependency-path: ./
+
+      - name: Install Python libraries
+        if: steps.python.outputs.cache-hit != true
+        run: pip install -r ./requirements.txt
+
+      - name: Get URL
+        run: python ./checkin.py ${{ inputs.fingerprint }} ${{ inputs.model }}

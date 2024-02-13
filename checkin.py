@@ -9,7 +9,6 @@ from io import BytesIO
 from pprint import pprint
 from urllib3.exceptions import InsecureRequestWarning
 
-
 def get_update_url(fingerprint,device):
     if(fingerprint=="" or device==""):
         print("引数を正しく入力してください。")
@@ -183,4 +182,3 @@ if __name__=="__main__":
         print()
         sys.exit(1)
     print(json.dumps(get_update_url(sys.argv[1],sys.argv[2]), indent=2, sort_keys=True))
-    
