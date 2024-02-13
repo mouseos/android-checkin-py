@@ -9,12 +9,6 @@ from io import BytesIO
 from pprint import pprint
 from urllib3.exceptions import InsecureRequestWarning
 
-if not len(sys.argv) == 3:
-    print()
-    print("Use: python3 " + sys.argv[0] + " [ro.build.fingerprint] [ro.product.model]")
-    print()
-    sys.exit(1)
-
 def get_update_url(fingerprint,device):
     if(fingerprint=="" or device==""):
         print("引数を正しく入力してください。")
@@ -58,7 +52,7 @@ def get_update_url(fingerprint,device):
     # 値をセット
     #android_checkin_request.id=0
     android_checkin_request.digest= "1-da39a3ee5e6b4b0d3255bfef95601890afd80709"  #値は何でもよい
-    #android_checkin_request.locale=""
+    #android_checkin_request.locale="ja_JP"
     #android_checkin_request.loggingId=0
     #android_checkin_request.marketCheckin=""
     #android_checkin_request.macAddr=[]
@@ -153,6 +147,7 @@ def get_update_url(fingerprint,device):
             # パースする
             response_proto = AndroidCheckinResponse()
             response_proto.ParseFromString(response.content)
+            result={'fingerprint':fingerprint,'device':device,'description':"","title":"",'url':""}
             for data in response_proto.setting:
                 if((data.name.decode('utf-8'))=="update_url"):
                     '''
@@ -161,11 +156,16 @@ def get_update_url(fingerprint,device):
                     print("Build:"+android_build_proto.id)
                     print("URL:"+data.value.decode('utf-8'))
                     '''
-                    #辞書を返す
-                    return({'fingerprint':fingerprint,'device':device,'url':data.value.decode('utf-8')})
-            # ファイルに保存
-            '''with open('response.proto', 'w') as file:
-                file.write(str(response_proto))'''
+                    
+                    result["url"]=data.value.decode('utf-8')
+                if((data.name.decode('utf-8'))=="update_description"):
+                    result["description"]=data.value.decode('utf-8')
+                if((data.name.decode('utf-8'))=="update_title"):
+                    result["title"]=data.value.decode('utf-8')
+            if(len(result["url"])!=0):
+                return(result)
+            else:
+                return(None)
         else:
             print(f"Check-in Failure:\nStatusCode: {response.status_code}")
     except requests.RequestException as e:
@@ -175,5 +175,10 @@ def get_update_url(fingerprint,device):
 #アップデートURLを取得
 #pprint(get_update_url("Fairphone/FP3/FP3:9/8901.2.A.0105.20191217/12171325:user/release-keys","FP3"))
 #pprint(get_update_url("benesse/TAB-A05-BD/TAB-A05-BD:9/01.00.000/01.00.000:user/release-keys","TAB-A05-BD"))
-
-print(json.dumps(get_update_url(sys.argv[1],sys.argv[2]), indent=2, sort_keys=True))
+if __name__=="__main__":
+    if not len(sys.argv) == 3:
+        print()
+        print("Use: python3 " + sys.argv[0] + " [ro.build.fingerprint] [ro.product.model]")
+        print()
+        sys.exit(1)
+    print(json.dumps(get_update_url(sys.argv[1],sys.argv[2]), indent=2, sort_keys=True))
