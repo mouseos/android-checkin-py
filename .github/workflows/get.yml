@@ -39,4 +39,4 @@ jobs:
         run: pip install -r ./requirements.txt
 
       - name: Get URL
-        run: python ./checkin.py ${{ inputs.fingerprint }} ${{ inputs.model }}
+        run: python ./checkin.py "${{ inputs.fingerprint }}" "${{ inputs.model }}"
