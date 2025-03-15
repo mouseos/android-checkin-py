@@ -52,7 +52,7 @@ def get_update_url(fingerprint,device):
     # 値をセット
     #android_checkin_request.id=0
     android_checkin_request.digest= "1-da39a3ee5e6b4b0d3255bfef95601890afd80709"  #値は何でもよい
-    #android_checkin_request.locale="ja_JP"
+    android_checkin_request.locale="ja_JP"
     #android_checkin_request.loggingId=0
     #android_checkin_request.marketCheckin=""
     #android_checkin_request.macAddr=[]
@@ -95,7 +95,7 @@ def get_update_url(fingerprint,device):
     #android_build_proto.bootloader="unknown"
     #android_build_proto.client="android-uniscope"
     android_build_proto.timestamp=0 #元の値は1576561122だったがそれ以下の値でも動く
-    #android_build_proto.googleServices=19275037 
+    #android_build_proto.googleServices=19275037
     android_build_proto.device=device
     #android_build_proto.sdkVersion=28
     #android_build_proto.model="FP3"
@@ -159,7 +159,7 @@ def get_update_url(fingerprint,device):
                     
                     result["url"]=data.value.decode('utf-8')
                 if((data.name.decode('utf-8'))=="update_description"):
-                    result["description"]=data.value.decode('utf-8')
+                    result["description"]=data.value.decode('utf-8')  # ここはデコード済みの文字列
                 if((data.name.decode('utf-8'))=="update_title"):
                     result["title"]=data.value.decode('utf-8')
             if(len(result["url"])!=0):
@@ -181,4 +181,10 @@ if __name__=="__main__":
         print("Use: python3 " + sys.argv[0] + " [ro.build.fingerprint] [ro.product.model]")
         print()
         sys.exit(1)
-    print(json.dumps(get_update_url(sys.argv[1],sys.argv[2]), indent=2, sort_keys=True))
+    
+    # ensure_ascii=False を追加して、日本語が正しく表示されるようにする
+    result = get_update_url(sys.argv[1],sys.argv[2])
+    if result:
+      print(json.dumps(result, indent=2, sort_keys=True, ensure_ascii=False))
+    else:
+      print("No update found.")

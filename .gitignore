@@ -1,2 +1,4 @@
 __py-cache__/
 *.pyc
+tmp
+out
