@@ -4,7 +4,7 @@ import shutil
 import zipfile
 import subprocess
 from urllib.parse import urlparse
-import re  # Import the regular expression module
+import re
 
 # Assuming checkin.py is in the same directory
 import checkin
@@ -24,19 +24,18 @@ def download_file(url, destination, downloader="aria2c", num_connections=16):
                 "--continue=true",  # Continue partial downloads
                 f"--max-connection-per-server={num_connections}",
                 "--split=16",
-                "--min-split-size=1M",  # Add min-split-size
+                "--min-split-size=1M",
                 f"--out={destination}",
                 url,
             ]
         else:
             raise ValueError("Invalid downloader specified. Only 'aria2c' is supported.")
 
-        subprocess.run(command, check=True, capture_output=False, text=False) # capture_output, textをFalseに
+        subprocess.run(command, check=True, capture_output=False, text=False)
         print(f"Download complete: {destination}")
 
     except subprocess.CalledProcessError as e:
         print(f"Error during download: {e}")
-        # Consider printing stderr: print(e.stderr)
         sys.exit(1)
     except FileNotFoundError:
         print(f"Downloader aria2c not found.  Please install it.")
@@ -69,19 +68,12 @@ def auto_download(fingerprint, model):
         with open("tmp/description.html", "w", encoding="utf-8") as f:
             f.write(description_html)
 
-        # 3. Determine output directory name (and ZIP filename)
-        zip_filename_base = sanitize_filename(update_info['fingerprint'])
-        zip_filename = f"{zip_filename_base}.zip"
-        output_dir = os.path.join("out", zip_filename_base)
 
+        # 3. Download the update file.  *Before* determining the output dir.
+        download_file(update_info['url'], os.path.join("tmp", "temp.zip"))  # Temporary name
 
-        # 4. Download the update file
-        download_file(update_info['url'], os.path.join("tmp", zip_filename))
-
-
-        # 5. Extract *only* metadata and copy
-        with zipfile.ZipFile(os.path.join("tmp", zip_filename), 'r') as zip_ref:
-            # Extract only metadata.txt
+        # 4. Extract *only* metadata
+        with zipfile.ZipFile(os.path.join("tmp", "temp.zip"), 'r') as zip_ref:
             try:
                 zip_ref.extract("META-INF/com/android/metadata", "tmp")
             except KeyError:
@@ -90,28 +82,8 @@ def auto_download(fingerprint, model):
                 sys.exit(1)
         shutil.copy("tmp/META-INF/com/android/metadata", "tmp/metadata.txt")
 
-
-        # 6. Update metadata
+        # 5.  Determine output directory name (and ZIP filename) *from metadata*
         with open("tmp/metadata.txt", "r", encoding="utf-8") as f:
-            metadata = f.read()
-        with open("tmp/metadata.txt", "a", encoding="utf-8") as f:
-            f.write(f"url={update_info['url']}\n")
-
-
-        # 7. Create output directory
-        if not os.path.exists("out"):
-            os.makedirs("out")
-        os.makedirs(output_dir, exist_ok=True)  # Create even if it exists
-
-
-        # 8. Move files
-        # Only move description.html, the downloaded ZIP, and metadata.txt
-        shutil.move("tmp/description.html", os.path.join(output_dir, "description.html"))
-        shutil.move(os.path.join("tmp", zip_filename), os.path.join(output_dir, zip_filename))
-        shutil.move("tmp/metadata.txt", os.path.join(output_dir, "metadata.txt"))
-
-        # 9. Prepare for the next iteration (recursive call)
-        with open(os.path.join(output_dir, "metadata.txt"), "r", encoding="utf-8") as f:
              metadata_content = f.read()
         metadata_lines = metadata_content.splitlines()
 
@@ -120,11 +92,36 @@ def auto_download(fingerprint, model):
             if line.startswith("post-build="):
                 post_build = line.split("=")[1].strip()
                 break
+        if not post_build:
+            print("post-build not found in metadata.txt")
+            shutil.rmtree("tmp")
+            sys.exit(1)
 
-        fingerprint = post_build if post_build else None # Set next fingerprint
+        zip_filename_base = sanitize_filename(post_build)
+        zip_filename = f"{zip_filename_base}.zip"
+        output_dir = os.path.join("out", zip_filename_base)
+
+
+        # 6. Update metadata (add url)
+        with open("tmp/metadata.txt", "a", encoding="utf-8") as f:
+            f.write(f"url={update_info['url']}\n")
+
+        # 7. Create output directory
+        if not os.path.exists("out"):
+            os.makedirs("out")
+        os.makedirs(output_dir, exist_ok=True)
+
+        # 8. Move files, renaming the ZIP file
+        shutil.move("tmp/description.html", os.path.join(output_dir, "description.html"))
+        shutil.move(os.path.join("tmp", "temp.zip"), os.path.join(output_dir, zip_filename)) # Rename
+        shutil.move("tmp/metadata.txt", os.path.join(output_dir, "metadata.txt"))
+
+
+        # 9. Prepare for the next iteration (recursive call)
+        fingerprint = post_build  # Use the extracted post_build
         # model remains the same
 
-        # Clean up the tmp directory after each iteration
+        # Clean up the tmp directory
         shutil.rmtree("tmp")
 
 
